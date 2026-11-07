@@ -1,0 +1,10 @@
+{
+  "result": "written_readback_verified_reset_sent",
+  "output": "firmware_patched/flashing/run_20261107T081225Z",
+  "exact_image_match": true,
+  "all_app_stack_files_match": true,
+  "readback_sha256": "54ff5707b07e0388689f023180fa483fcbabec82d5286996c6c314d27b0aad38",
+  "expected_sha256": "54ff5707b07e0388689f023180fa483fcbabec82d5286996c6c314d27b0aad38",
+  "hardware_playback_tested": false,
+  "write_attempted": true
+}

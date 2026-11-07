@@ -1,0 +1,7 @@
+{
+  "result": "failed_or_unconfirmed",
+  "output": "firmware_patched/flashing/run_20261107T080409Z",
+  "error": "No matching HID device (0ECB:1EB2)",
+  "write_attempted": false,
+  "automatic_retry": false
+}

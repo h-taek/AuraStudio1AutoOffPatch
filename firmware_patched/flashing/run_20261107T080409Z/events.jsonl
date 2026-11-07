@@ -1,0 +1,2 @@
+{"time_utc": "2026-11-07T08:04:09.004567+00:00", "event": "start", "approved_package_sha256": "8d1e609797b9b95af23c98215e32b09afd673b57cd94ad767d4e78e02c7181f0", "payload_sha256": "d9572a0326046dfd8f33f1b1b245dc846bee04a5684a7a66773468e52fb8778d", "bytes": 1316910}
+{"time_utc": "2026-11-07T08:04:09.005555+00:00", "event": "error", "message": "No matching HID device (0ECB:1EB2)", "write_attempted": false}

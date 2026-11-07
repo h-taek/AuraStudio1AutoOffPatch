@@ -1,0 +1,40 @@
+{
+  "time_utc": "2026-11-07T07:39:11.184410+00:00",
+  "status": "local_and_read_only_checks_complete; hardware_write_tests_not_run",
+  "original_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "current_device_matches_original": true,
+  "device_final_status": {
+    "status": 0,
+    "poll_timeout_ms": 15796,
+    "state": 2,
+    "string_index": 0
+  },
+  "local_patch_rebuild_identical": true,
+  "patch_changed_bytes": 6,
+  "vm_code_changed_bytes": 1,
+  "local_checksum_and_structure_checks": "passed",
+  "all_tests": {
+    "command": "python3 -B -m unittest discover -s tools -p 'test_*.py' -v",
+    "passed": 35,
+    "failed": 0
+  },
+  "raw_container_as_csr_hid_host_file": "fails_inspected_suffix_rules",
+  "usb_wrapper_checks": "passed_reimplementation_of_inspected_rules; native_tool_not_executed",
+  "independent_wrapper_crc_check": "passed_without_zlib",
+  "offline_usb_packets": {
+    "data_reports": 1295,
+    "last_data_bytes": 912,
+    "final_empty_reports": 1,
+    "roundtrip_payload_exact": true
+  },
+  "firmware_download_to_device": false,
+  "reset_abort_or_clear_to_device": false,
+  "unresolved": [
+    "Target acceptance of modified/unsigned image and all-FF filesystem preamble",
+    "DFU reentry/rollback and original rewrite after a failed update",
+    "Auto-off suppression after sufficient idle time",
+    "Playback resume while connected and reconnect after full Bluetooth disconnection"
+  ],
+  "restore_candidate_is_not_a_verified_recovery": true,
+  "other_shutdown_paths_exist": true
+}

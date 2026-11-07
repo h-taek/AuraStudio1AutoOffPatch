@@ -1,0 +1,29 @@
+[
+  {
+    "time_utc": "2026-11-07T07:52:23.526259+00:00",
+    "event": "recovery_status_before",
+    "raw": "0207b43d000a02",
+    "state_raw": "030a",
+    "status": 7,
+    "poll_timeout_ms": 15796,
+    "state": 10,
+    "string_index": 2
+  },
+  {
+    "time_utc": "2026-11-07T07:52:23.528740+00:00",
+    "event": "clear_status_sent",
+    "raw": "0304",
+    "io_return": "0x00000000",
+    "reference": "CSR HidDfu.dll 0x10007070..0x10007085"
+  },
+  {
+    "time_utc": "2026-11-07T07:52:23.533468+00:00",
+    "event": "recovery_status_after",
+    "raw": "0200b43d000200",
+    "state_raw": "0302",
+    "status": 0,
+    "poll_timeout_ms": 15796,
+    "state": 2,
+    "string_index": 0
+  }
+]

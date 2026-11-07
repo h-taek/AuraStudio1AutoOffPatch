@@ -1,0 +1,51 @@
+{
+  "format": "canonical fsr_dfu1 preamble; previous all-FF packages failed real device verification",
+  "original_canonical_hardware_verified": true,
+  "patched_hardware_verified": false,
+  "images": [
+    {
+      "name": "aura_studio1_original_restore",
+      "source_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+      "payload_sha256": "db93e9fd5cc91615eb148542f80c602acab42db80f2b52bb3f83b8c37839a22d",
+      "usb_package_sha256": "86369c3125c9a5151860f2a6eadf91c3da62a99bb44217ce593f4258da0dd001",
+      "fs_crc_hex": "eb100f75",
+      "code_and_settings_unchanged_from_source": true,
+      "packet_plan": {
+        "mode": "offline_only_no_hardware_send",
+        "feature_report_bytes": 1023,
+        "payload_per_full_report": 1017,
+        "data_reports": 1295,
+        "final_empty_reports": 1,
+        "last_data_bytes": 912,
+        "first_report_preview": "01010000f9034353522d6466753203002e181400c804",
+        "last_data_header": "01010e059003",
+        "final_empty_header": "01010f050000",
+        "reassembled_exactly": true,
+        "payload_sha256": "db93e9fd5cc91615eb148542f80c602acab42db80f2b52bb3f83b8c37839a22d",
+        "device_state_timing_and_acceptance_tested": false
+      }
+    },
+    {
+      "name": "aura_studio1_auto_off_disabled",
+      "source_sha256": "cdda00a3da9f4ffb17c16ad9c189f2e7ad97e991bfc549d24cdea3f6d753a7e5",
+      "payload_sha256": "d9572a0326046dfd8f33f1b1b245dc846bee04a5684a7a66773468e52fb8778d",
+      "usb_package_sha256": "8d1e609797b9b95af23c98215e32b09afd673b57cd94ad767d4e78e02c7181f0",
+      "fs_crc_hex": "72d56983",
+      "code_and_settings_unchanged_from_source": true,
+      "packet_plan": {
+        "mode": "offline_only_no_hardware_send",
+        "feature_report_bytes": 1023,
+        "payload_per_full_report": 1017,
+        "data_reports": 1295,
+        "final_empty_reports": 1,
+        "last_data_bytes": 912,
+        "first_report_preview": "01010000f9034353522d6466753203002e181400c804",
+        "last_data_header": "01010e059003",
+        "final_empty_header": "01010f050000",
+        "reassembled_exactly": true,
+        "payload_sha256": "d9572a0326046dfd8f33f1b1b245dc846bee04a5684a7a66773468e52fb8778d",
+        "device_state_timing_and_acceptance_tested": false
+      }
+    }
+  ]
+}

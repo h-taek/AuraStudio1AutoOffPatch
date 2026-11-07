@@ -1,0 +1,18 @@
+{
+  "reference_repo_commit": "9cf63ef4d0c015a111793af25f615b7d1c4da67e",
+  "reference_url": "https://raw.githubusercontent.com/layne11/csr8670_adk4_1/9cf63ef4d0c015a111793af25f615b7d1c4da67e/tools/bin/dfubuild.exe",
+  "reference_sha256": "fdf62b474eb8f9c557661730860dcfae54005e56c780a0d2ce7c184e209a4ab3",
+  "emulator": "unicorn 2.1.4, x86 32-bit, only CRC rewind function 0x416bd0 executed; append-word function hooked",
+  "fs_preamble_offset": 638946,
+  "fs_payload_offset": 639086,
+  "fs_payload_length": 677820,
+  "magic": "fsr_dfu1",
+  "signature_bytes": "128 zero bytes (unsigned CRC mode of native builder)",
+  "crc_field_offset": 639082,
+  "crc_field_hex": "eb100f75",
+  "crc_residue_over_field_and_payload": 0,
+  "canonical_original_sha256": "db93e9fd5cc91615eb148542f80c602acab42db80f2b52bb3f83b8c37839a22d",
+  "independent_reverse_bit_crc_matches_native": true,
+  "original_app_stack_settings_and_fs_payload_unchanged": true,
+  "hardware_acceptance": "pending"
+}

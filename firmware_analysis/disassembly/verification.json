@@ -1,0 +1,32 @@
+{
+  "tests_passed": 12,
+  "common_mnemonic_crosscheck_vectors": 22,
+  "original_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "original_unchanged": true,
+  "outputs": [
+    {
+      "listing": "stack_program.asm",
+      "listing_sha256": "308a0de9648d44d671775a5b41c81d06af975457d1621d64e195863e8506967b",
+      "source_window_sha256": "7230bf0782200dcee078d70842e8041dfbc8f9a6ed144ffe3a157958bd6c93c1",
+      "bytes_rebuilt": 606760,
+      "complete_byte_match": true,
+      "groups": 250573,
+      "unknown_groups": 3
+    },
+    {
+      "listing": "vm_body_provisional.asm",
+      "listing_sha256": "919ec4781b639a20a6da240e17676b0add1b51946add5692d79ff94cabbc7fe5",
+      "source_window_sha256": "1dd7c085d58e441115b4a535042ad21fd734c03ae58f5a66cafb7990d494f0e9",
+      "bytes_rebuilt": 337806,
+      "complete_byte_match": true,
+      "groups": 127790,
+      "unknown_groups": 165
+    }
+  ],
+  "provisional_vm_skip_bytes": 48,
+  "known_reference_differences": [
+    "comex does not decode opcode 000D as rti; retained as unknown",
+    "comex masks data immediates to 16 bits; alternate model keeps 24 bits after two prefixes"
+  ],
+  "validation_limit": "No silicon execution or complete opcode/VM loader verification"
+}

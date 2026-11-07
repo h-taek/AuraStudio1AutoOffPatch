@@ -1,0 +1,17 @@
+{
+  "original_sha256_before": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "original_sha256_after": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "repeat_dump_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "originals_unchanged": true,
+  "vm_matches_original_dfu": true,
+  "vm_lengths_sum_matches": true,
+  "listing_byte_coverage": true,
+  "switch_targets_checked": 489,
+  "all_switch_targets_are_instruction_boundaries": true,
+  "new_firmware_image_created": false,
+  "device_access_during_analysis": false,
+  "listing_rows_verified_against_original": 116911,
+  "evidence_rows_verified_against_original": 588,
+  "switch_csv_entries_verified_against_original": 489,
+  "decoder_tests_passed": 12
+}

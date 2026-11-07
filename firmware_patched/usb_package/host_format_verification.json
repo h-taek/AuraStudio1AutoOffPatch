@@ -1,0 +1,72 @@
+{
+  "scope": "Host file format and offline packet checks only",
+  "files": [
+    {
+      "name": "aura_studio1_auto_off_disabled_usb.dfu",
+      "bytes": 1316926,
+      "sha256": "be62ac59c2847537035ce0327bdf5d8a9b47121d1d18742e4d70d9dd480f96d2",
+      "inner_payload_unchanged": true,
+      "suffix": {
+        "vendor_id": "0xecb",
+        "product_id": "0x1eb2",
+        "release": "0x261",
+        "dfu_version": "0x100",
+        "suffix_bytes": 16,
+        "crc32": "0x4e6fc64a",
+        "payload_bytes": 1316910
+      },
+      "dry_run": {
+        "mode": "offline_only_no_hardware_send",
+        "feature_report_bytes": 1023,
+        "payload_per_full_report": 1017,
+        "data_reports": 1295,
+        "final_empty_reports": 1,
+        "last_data_bytes": 912,
+        "first_report_preview": "01010000f9034353522d6466753203002e181400c804",
+        "last_data_header": "01010e059003",
+        "final_empty_header": "01010f050000",
+        "reassembled_exactly": true,
+        "payload_sha256": "cdda00a3da9f4ffb17c16ad9c189f2e7ad97e991bfc549d24cdea3f6d753a7e5",
+        "device_state_timing_and_acceptance_tested": false
+      }
+    },
+    {
+      "name": "aura_studio1_original_restore_candidate_usb.dfu",
+      "bytes": 1316926,
+      "sha256": "20cd26e1968e8fa8add1e20b59f671e7bf20d0f003375ff50438debde37ab3d6",
+      "inner_payload_unchanged": true,
+      "suffix": {
+        "vendor_id": "0xecb",
+        "product_id": "0x1eb2",
+        "release": "0x261",
+        "dfu_version": "0x100",
+        "suffix_bytes": 16,
+        "crc32": "0x4e6fc64a",
+        "payload_bytes": 1316910
+      },
+      "dry_run": {
+        "mode": "offline_only_no_hardware_send",
+        "feature_report_bytes": 1023,
+        "payload_per_full_report": 1017,
+        "data_reports": 1295,
+        "final_empty_reports": 1,
+        "last_data_bytes": 912,
+        "first_report_preview": "01010000f9034353522d6466753203002e181400c804",
+        "last_data_header": "01010e059003",
+        "final_empty_header": "01010f050000",
+        "reassembled_exactly": true,
+        "payload_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+        "device_state_timing_and_acceptance_tested": false
+      }
+    }
+  ],
+  "device_write": false,
+  "device_signature_policy": "unknown; all-FF upload preamble is not proof",
+  "restore_guaranteed": false,
+  "hardware_behavior_tested": false,
+  "references": [
+    "https://raw.githubusercontent.com/layne11/csr8670_adk4_1/9cf63ef4d0c015a111793af25f615b7d1c4da67e/tools/bin/HidDfu.dll",
+    "https://raw.githubusercontent.com/tchebb/bose-dfu/5787b07bef85aea9ffa136cbf030535888b517d9/src/dfu_file.rs",
+    "https://raw.githubusercontent.com/tchebb/bose-dfu/5787b07bef85aea9ffa136cbf030535888b517d9/src/protocol.rs"
+  ]
+}

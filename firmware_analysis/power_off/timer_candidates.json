@@ -1,0 +1,62 @@
+{
+  "profile_root": "0x8121",
+  "record": "0x7fd0",
+  "record_words": 21,
+  "compiled_defaults": [
+    0,
+    30,
+    10,
+    3,
+    0,
+    10,
+    0,
+    0,
+    0,
+    15,
+    120,
+    100,
+    5,
+    5,
+    60,
+    3,
+    7000,
+    1000,
+    3000,
+    2000,
+    3
+  ],
+  "candidates": [
+    {
+      "event": "0x60d8",
+      "role_inferred": "idle/standby transition timer",
+      "ram_config_field_offset_words": 90,
+      "config_key_vm_index": 6,
+      "default_record_word_address": "0x7fd0",
+      "default_index": 19,
+      "compiled_default_value": 2000,
+      "default_vm_byte_offset": 321612,
+      "default_dfu_byte_offset": 1231074,
+      "default_bytes_hex": "d007",
+      "delay_expression_ms": "conf1[0x5A] * 1000",
+      "active_runtime_value_known": false,
+      "override_caveat": "PsRetrieve path precedes built-in fallback; upload may omit protected user keys. Absence from DFU PS records does not prove defaults active."
+    },
+    {
+      "event": "0x60df",
+      "role_inferred": "delayed power-off following standby",
+      "ram_config_field_offset_words": 71,
+      "config_key_vm_index": 6,
+      "default_record_word_address": "0x7fd0",
+      "default_index": 0,
+      "compiled_default_value": 0,
+      "default_vm_byte_offset": 321574,
+      "default_dfu_byte_offset": 1231036,
+      "default_bytes_hex": "0000",
+      "delay_expression_ms": "conf1[0x47] * 1000",
+      "active_runtime_value_known": false,
+      "override_caveat": "PsRetrieve path precedes built-in fallback; upload may omit protected user keys. Absence from DFU PS records does not prove defaults active."
+    }
+  ],
+  "patch_created": false,
+  "device_write_performed": false
+}

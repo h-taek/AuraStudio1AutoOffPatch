@@ -1,0 +1,101 @@
+{
+  "model": "Harman Kardon Aura Studio 1 / FCC APIHKAURAST",
+  "scope": "Skip automatic post-standby power-off timer 0x60DF scheduling only",
+  "source_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "output_sha256": "cdda00a3da9f4ffb17c16ad9c189f2e7ad97e991bfc549d24cdea3f6d753a7e5",
+  "bytes": 1316910,
+  "branch": {
+    "vm_code_word": 3599,
+    "original_dfu_byte": 916708,
+    "before": {
+      "mnemonic": "beq",
+      "target_word": 7278,
+      "text": "beq word_0x001C6E",
+      "bytes_hex": "000ef45e"
+    },
+    "after": {
+      "mnemonic": "bra",
+      "target_word": 7278,
+      "text": "bra word_0x001C6E",
+      "bytes_hex": "000ee05e"
+    }
+  },
+  "changed_byte_count": 6,
+  "changed_bytes": [
+    {
+      "offset": 909500,
+      "offset_hex": "0xDE0BC",
+      "before_hex": "2F",
+      "after_hex": "3B"
+    },
+    {
+      "offset": 916710,
+      "offset_hex": "0xDFCE6",
+      "before_hex": "F4",
+      "after_hex": "E0"
+    },
+    {
+      "offset": 1316906,
+      "offset_hex": "0x14182A",
+      "before_hex": "5B",
+      "after_hex": "C5"
+    },
+    {
+      "offset": 1316907,
+      "offset_hex": "0x14182B",
+      "before_hex": "7D",
+      "after_hex": "43"
+    },
+    {
+      "offset": 1316908,
+      "offset_hex": "0x14182C",
+      "before_hex": "01",
+      "after_hex": "E1"
+    },
+    {
+      "offset": 1316909,
+      "offset_hex": "0x14182D",
+      "before_hex": "83",
+      "after_hex": "8C"
+    }
+  ],
+  "checksums": {
+    "vm": {
+      "algorithm": "XOR16 little-endian words; full declared image",
+      "field_offset": 909500,
+      "before": 47919,
+      "after": 47931,
+      "xor_result": 0
+    },
+    "filesystem": {
+      "algorithm": "XOR16 little-endian words",
+      "field_offset": 1316894,
+      "before": 16612,
+      "after": 16612,
+      "xor_result": 0
+    },
+    "file": {
+      "algorithm": "zlib.crc32(file_without_crc) XOR 0xFFFFFFFF",
+      "field_offset": 1316906,
+      "before": "0x83017D5B",
+      "after": "0x8CE143C5"
+    }
+  },
+  "standby_and_resume_code_preserved": true,
+  "other_files_unchanged": 16,
+  "container_parse_passed": true,
+  "device_access": false,
+  "signature_acceptance": "not verified",
+  "hardware_behavior": "not tested",
+  "restoreability": "not verified",
+  "does_not_disable": [
+    "manual power-off",
+    "other shutdown paths",
+    "standby entry"
+  ],
+  "checksum_reference": {
+    "url": "https://raw.githubusercontent.com/layne11/csr8670_adk4_1/9cf63ef4d0c015a111793af25f615b7d1c4da67e/tools/bin/appquery.exe",
+    "sha256": "e9b3e8a328cce356b08e12a7bc05af42b197d60d0f64b86efecfffb694017d0f",
+    "method": "Static objdump disassembly; executable not run"
+  }
+}

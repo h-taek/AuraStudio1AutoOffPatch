@@ -1,0 +1,64 @@
+{
+  "source": "filesystem/fs00/vm.app",
+  "source_dfu_byte_offset": 909462,
+  "source_sha256": "4b20d017c5970eca18728ead4189048367d0e5fb74ec9452a72cfe4c5cb59164",
+  "header_words_hex": [
+    "4249",
+    "4776",
+    "6D41",
+    "7070",
+    "0018",
+    "0002",
+    "682A",
+    "2B9D",
+    "009C",
+    "00B5",
+    "1EDF",
+    "0001",
+    "5000",
+    "0000",
+    "0000",
+    "03E7",
+    "F647",
+    "0002",
+    "93DF",
+    "BB2F",
+    "0000",
+    "0000",
+    "0368",
+    "0000"
+  ],
+  "header_bytes": 48,
+  "code_words": 157738,
+  "code_bytes": 315476,
+  "code_vm_byte_offset": 48,
+  "code_dfu_byte_offset": 909510,
+  "constants_words": 11165,
+  "constants_vm_byte_offset": 315524,
+  "constants_dfu_byte_offset": 1224986,
+  "size_equation_matches": true,
+  "constant_address_base_inferred": 29696,
+  "constant_address_formula": "vm_file_byte = 0x4D084 + 2 * (logical_word - 0x7400)",
+  "load_map_evidence": [
+    "Both switch tables: all 489 targets land on decoded instruction boundaries",
+    "Default profile root -> configuration pointers -> 21-word timer record matches load length",
+    "Code plus constants plus header exactly equals vm.app size"
+  ],
+  "physical_chip_address_confirmed": false,
+  "switch_tables": [
+    {
+      "name": "main_dispatch",
+      "constant_word_base": "0x76cb",
+      "branch_base_word": "0xc26",
+      "entries": 254,
+      "all_targets_instruction_boundaries": true
+    },
+    {
+      "name": "activity_dispatch",
+      "constant_word_base": "0x75e0",
+      "branch_base_word": "0xbd6",
+      "entries": 235,
+      "all_targets_instruction_boundaries": true
+    }
+  ]
+}

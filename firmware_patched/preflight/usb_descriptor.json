@@ -1,0 +1,18 @@
+{
+  "vid": "0x0ECB",
+  "pid": "0x1EB2",
+  "release": "0x0261",
+  "product": "000000020900",
+  "report_descriptor_bytes": 40,
+  "raw_hex": "0600ff0901a10115002600017508090296fe038501b102090295068502b102090295018503b102c0",
+  "usage_page": "0xFF00",
+  "usage": 1,
+  "feature_report_payload_lengths_excluding_id": {
+    "1": 1022,
+    "2": 6,
+    "3": 1
+  },
+  "maximum_feature_report_bytes_including_id": 1023,
+  "firmware_data_per_report": 1017,
+  "device_write": false
+}

@@ -1,0 +1,13 @@
+{
+  "result": "failed_or_unconfirmed",
+  "output": "firmware_patched/flashing/run_20261107T080828Z",
+  "error": "Current device no longer matches approved original; no write",
+  "write_attempted": false,
+  "automatic_retry": false,
+  "last_status": {
+    "status": 0,
+    "poll_timeout_ms": 15796,
+    "state": 2,
+    "string_index": 0
+  }
+}

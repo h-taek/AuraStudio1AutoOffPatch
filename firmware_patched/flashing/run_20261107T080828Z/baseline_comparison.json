@@ -1,0 +1,35 @@
+{
+  "sha256": "713526fe210a2276055f78f66a5c188069f19e92b1c13fa442d13d0c9c5f975c",
+  "different_bytes": 34,
+  "all_differences_inside_ps_area": true,
+  "changed_ps_records_without_values": [
+    {
+      "key": "0x2637",
+      "old_action": "set_always",
+      "new_action": "set_always",
+      "word_count": 2,
+      "value_changed": true,
+      "record_offset": 638190
+    },
+    {
+      "key": "0x2639",
+      "old_action": "set_always",
+      "new_action": "set_always",
+      "word_count": 13,
+      "value_changed": true,
+      "record_offset": 638232
+    },
+    {
+      "key": "0x02B5",
+      "old_action": "set_always",
+      "new_action": "set_always",
+      "word_count": 6,
+      "value_changed": true,
+      "record_offset": 638692
+    }
+  ],
+  "old_ps_crc": "0x3DA03E8D",
+  "new_ps_crc": "0x48B762F4",
+  "app_stack_and_fs_payload_equal": true,
+  "header_and_description_equal": true
+}

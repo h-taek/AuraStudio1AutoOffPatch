@@ -1,0 +1,11 @@
+{
+  "result": "restore_failed_or_unconfirmed",
+  "error": "DFU error status=7 state=10; stopped",
+  "last_status": {
+    "raw": "0207b43d000a02",
+    "status": 7,
+    "poll_timeout_ms": 15796,
+    "state": 10,
+    "string_index": 2
+  }
+}

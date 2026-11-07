@@ -1,0 +1,7 @@
+{
+  "result": "original_files_restored_readback_verified_reset_sent",
+  "exact_image_match": false,
+  "all_app_stack_files_match": true,
+  "readback_sha256": "db93e9fd5cc91615eb148542f80c602acab42db80f2b52bb3f83b8c37839a22d",
+  "expected_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925"
+}

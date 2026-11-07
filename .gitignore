@@ -1,0 +1,35 @@
+# 작업 문서
+HANDOFF.md
+PROGRESS.md
+docs/
+
+# 하위 폴더 작업 메모 (설명은 루트 README)
+firmware_*/**/README.md
+
+# 덤프 원시 기록 (firmware_bin/*.bin과 내용 중복)
+firmware_bin/captures/
+firmware_bin/logs/
+
+# vm_program.asm으로 대체된 임시 해석
+firmware_analysis/disassembly/vm_body_provisional.asm
+
+# 패치 적용에 필요 없는 분석·검증 도구 (로컬 보관)
+tools/image_disassemble.py
+tools/image_unpack_verify.py
+tools/research/
+tools/vendor/
+tests/test_image_disassemble.py
+firmware_patched/recovery/check_fs_crc.py
+
+# Qualcomm(CSR) 도구 디스어셈블 발췌
+firmware_patched/references/
+firmware_patched/preflight/references/
+firmware_patched/recovery/dfubuild_fs_crc_reference.asm
+firmware_patched/flashing/run_20261107T074942Z/csr_reset_reference.asm
+
+# 로컬 산출물
+runs/
+.DS_Store
+__pycache__/
+*.pyc
+tools/device_usb_config

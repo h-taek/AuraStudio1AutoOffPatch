@@ -1,0 +1,32 @@
+{
+  "result": "passed",
+  "independent_of_patch_builder": true,
+  "source_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "output_sha256": "cdda00a3da9f4ffb17c16ad9c189f2e7ad97e991bfc549d24cdea3f6d753a7e5",
+  "bytes": 1316910,
+  "changed_byte_count": 6,
+  "changed_offsets_hex": [
+    "0xde0bc",
+    "0xdfce6",
+    "0x14182a",
+    "0x14182b",
+    "0x14182c",
+    "0x14182d"
+  ],
+  "vm_code_changed_bytes": 1,
+  "branch_unconditional": true,
+  "branch_target_word": "0x1C6E",
+  "vm_xor16": 0,
+  "filesystem_xor16": 0,
+  "dfu_crc32_verified": true,
+  "stack_ps_and_vm_constants_unchanged": true,
+  "reverse_diff_restores_original": true,
+  "device_access": false,
+  "hardware_tested": false,
+  "tests": {
+    "patch_regression": 7,
+    "xap_decoder": 12,
+    "container_parser": 11,
+    "total_passed": 30
+  }
+}

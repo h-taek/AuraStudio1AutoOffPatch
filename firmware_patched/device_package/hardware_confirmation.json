@@ -1,0 +1,16 @@
+{
+  "recorded_at_utc": "2026-11-07T12:05:32.711026+00:00",
+  "kind": "user_report",
+  "normal_bluetooth_playback": "confirmed",
+  "auto_off_patch_behavior": "confirmed_by_user",
+  "standby_without_power_off": {
+    "duration": "several hours",
+    "exact_minutes": null,
+    "source": "Claude conversation user message 2026-11-07T11:52:34.663Z",
+    "quote": "지금 우리가 수정한건 실 기기에 잘 반영되서, 몇시간째 대기 모드에서 안꺼지고 잘 있어"
+  },
+  "latest_confirmation": "수정 후 정상 재생 확인 됐고, 패치도 잘 들어감.",
+  "reconnect_after_full_disconnect": "not separately reported",
+  "device_access_during_archival": false,
+  "verified_flashed_payload_sha256": "54ff5707b07e0388689f023180fa483fcbabec82d5286996c6c314d27b0aad38"
+}

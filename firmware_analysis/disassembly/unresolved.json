@@ -1,0 +1,1346 @@
+[
+  {
+    "listing": "stack_program.asm",
+    "word_index": "00009E",
+    "window_byte_offset": "0000013C",
+    "dfu_byte_offset": "0000072A",
+    "raw": "0ddf",
+    "interpretation": ".word 0xDF0D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "stack_program.asm",
+    "word_index": "026724",
+    "window_byte_offset": "0004CE48",
+    "dfu_byte_offset": "0004D436",
+    "raw": "0ddf",
+    "interpretation": ".word 0xDF0D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "stack_program.asm",
+    "word_index": "026796",
+    "window_byte_offset": "0004CF2C",
+    "dfu_byte_offset": "0004D51A",
+    "raw": "0ddf",
+    "interpretation": ".word 0xDF0D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026BB2",
+    "window_byte_offset": "0004D764",
+    "dfu_byte_offset": "0012B82A",
+    "raw": "040e",
+    "interpretation": ".word 0x0E04 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026BD3",
+    "window_byte_offset": "0004D7A6",
+    "dfu_byte_offset": "0012B86C",
+    "raw": "0902",
+    "interpretation": ".word 0x0209 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026BEB",
+    "window_byte_offset": "0004D7D6",
+    "dfu_byte_offset": "0012B89C",
+    "raw": "0c09",
+    "interpretation": ".word 0x090C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026D30",
+    "window_byte_offset": "0004DA60",
+    "dfu_byte_offset": "0012BB26",
+    "raw": "0401",
+    "interpretation": ".word 0x0104 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026D32",
+    "window_byte_offset": "0004DA64",
+    "dfu_byte_offset": "0012BB2A",
+    "raw": "0401",
+    "interpretation": ".word 0x0104 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026D3A",
+    "window_byte_offset": "0004DA74",
+    "dfu_byte_offset": "0012BB3A",
+    "raw": "0908",
+    "interpretation": ".word 0x0809 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "026D3E",
+    "window_byte_offset": "0004DA7C",
+    "dfu_byte_offset": "0012BB42",
+    "raw": "0910",
+    "interpretation": ".word 0x1009 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027051",
+    "window_byte_offset": "0004E0A2",
+    "dfu_byte_offset": "0012C168",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027055",
+    "window_byte_offset": "0004E0AA",
+    "dfu_byte_offset": "0012C170",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027424",
+    "window_byte_offset": "0004E848",
+    "dfu_byte_offset": "0012C90E",
+    "raw": "0404",
+    "interpretation": ".word 0x0404 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027428",
+    "window_byte_offset": "0004E850",
+    "dfu_byte_offset": "0012C916",
+    "raw": "0808",
+    "interpretation": ".word 0x0808 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027429",
+    "window_byte_offset": "0004E852",
+    "dfu_byte_offset": "0012C918",
+    "raw": "0909",
+    "interpretation": ".word 0x0909 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02742C",
+    "window_byte_offset": "0004E858",
+    "dfu_byte_offset": "0012C91E",
+    "raw": "0c0c",
+    "interpretation": ".word 0x0C0C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02742D",
+    "window_byte_offset": "0004E85A",
+    "dfu_byte_offset": "0012C920",
+    "raw": "0d0d",
+    "interpretation": ".word 0x0D0D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027454",
+    "window_byte_offset": "0004E8A8",
+    "dfu_byte_offset": "0012C96E",
+    "raw": "0404",
+    "interpretation": ".word 0x0404 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027455",
+    "window_byte_offset": "0004E8AA",
+    "dfu_byte_offset": "0012C970",
+    "raw": "0406",
+    "interpretation": ".word 0x0604 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02745C",
+    "window_byte_offset": "0004E8B8",
+    "dfu_byte_offset": "0012C97E",
+    "raw": "0808",
+    "interpretation": ".word 0x0808 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02745D",
+    "window_byte_offset": "0004E8BA",
+    "dfu_byte_offset": "0012C980",
+    "raw": "080a",
+    "interpretation": ".word 0x0A08 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02745E",
+    "window_byte_offset": "0004E8BC",
+    "dfu_byte_offset": "0012C982",
+    "raw": "0909",
+    "interpretation": ".word 0x0909 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02745F",
+    "window_byte_offset": "0004E8BE",
+    "dfu_byte_offset": "0012C984",
+    "raw": "090b",
+    "interpretation": ".word 0x0B09 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027464",
+    "window_byte_offset": "0004E8C8",
+    "dfu_byte_offset": "0012C98E",
+    "raw": "0c0c",
+    "interpretation": ".word 0x0C0C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027465",
+    "window_byte_offset": "0004E8CA",
+    "dfu_byte_offset": "0012C990",
+    "raw": "0c0e",
+    "interpretation": ".word 0x0E0C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027466",
+    "window_byte_offset": "0004E8CC",
+    "dfu_byte_offset": "0012C992",
+    "raw": "0d0d",
+    "interpretation": ".word 0x0D0D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027467",
+    "window_byte_offset": "0004E8CE",
+    "dfu_byte_offset": "0012C994",
+    "raw": "0d0f",
+    "interpretation": ".word 0x0F0D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274A5",
+    "window_byte_offset": "0004E94A",
+    "dfu_byte_offset": "0012CA10",
+    "raw": "0893",
+    "interpretation": ".word 0x9308 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274A7",
+    "window_byte_offset": "0004E94E",
+    "dfu_byte_offset": "0012CA14",
+    "raw": "0c20",
+    "interpretation": ".word 0x200C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274A8",
+    "window_byte_offset": "0004E950",
+    "dfu_byte_offset": "0012CA16",
+    "raw": "0495",
+    "interpretation": ".word 0x9504 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274AA",
+    "window_byte_offset": "0004E954",
+    "dfu_byte_offset": "0012CA1A",
+    "raw": "0c20",
+    "interpretation": ".word 0x200C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274AB",
+    "window_byte_offset": "0004E956",
+    "dfu_byte_offset": "0012CA1C",
+    "raw": "0d96",
+    "interpretation": ".word 0x960D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274AD",
+    "window_byte_offset": "0004E95A",
+    "dfu_byte_offset": "0012CA20",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274B0",
+    "window_byte_offset": "0004E960",
+    "dfu_byte_offset": "0012CA26",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274B1",
+    "window_byte_offset": "0004E962",
+    "dfu_byte_offset": "0012CA28",
+    "raw": "0998",
+    "interpretation": ".word 0x9809 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274B3",
+    "window_byte_offset": "0004E966",
+    "dfu_byte_offset": "0012CA2C",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274B6",
+    "window_byte_offset": "0004E96C",
+    "dfu_byte_offset": "0012CA32",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274B7",
+    "window_byte_offset": "0004E96E",
+    "dfu_byte_offset": "0012CA34",
+    "raw": "0c98",
+    "interpretation": ".word 0x980C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274B9",
+    "window_byte_offset": "0004E972",
+    "dfu_byte_offset": "0012CA38",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274BA",
+    "window_byte_offset": "0004E974",
+    "dfu_byte_offset": "0012CA3A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274BC",
+    "window_byte_offset": "0004E978",
+    "dfu_byte_offset": "0012CA3E",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274BD",
+    "window_byte_offset": "0004E97A",
+    "dfu_byte_offset": "0012CA40",
+    "raw": "099a",
+    "interpretation": ".word 0x9A09 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274BF",
+    "window_byte_offset": "0004E97E",
+    "dfu_byte_offset": "0012CA44",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274C2",
+    "window_byte_offset": "0004E984",
+    "dfu_byte_offset": "0012CA4A",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274C3",
+    "window_byte_offset": "0004E986",
+    "dfu_byte_offset": "0012CA4C",
+    "raw": "0c9a",
+    "interpretation": ".word 0x9A0C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0274C5",
+    "window_byte_offset": "0004E98A",
+    "dfu_byte_offset": "0012CA50",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027519",
+    "window_byte_offset": "0004EA32",
+    "dfu_byte_offset": "0012CAF8",
+    "raw": "081a",
+    "interpretation": ".word 0x1A08 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027556",
+    "window_byte_offset": "0004EAAC",
+    "dfu_byte_offset": "0012CB72",
+    "raw": "0880",
+    "interpretation": ".word 0x8008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027557",
+    "window_byte_offset": "0004EAAE",
+    "dfu_byte_offset": "0012CB74",
+    "raw": "0980",
+    "interpretation": ".word 0x8009 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027558",
+    "window_byte_offset": "0004EAB0",
+    "dfu_byte_offset": "0012CB76",
+    "raw": "0d80",
+    "interpretation": ".word 0x800D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027874",
+    "window_byte_offset": "0004F0E8",
+    "dfu_byte_offset": "0012D1AE",
+    "raw": "0d01",
+    "interpretation": ".word 0x010D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027AF6",
+    "window_byte_offset": "0004F5EC",
+    "dfu_byte_offset": "0012D6B2",
+    "raw": "0901",
+    "interpretation": ".word 0x0109 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027C70",
+    "window_byte_offset": "0004F8E0",
+    "dfu_byte_offset": "0012D9A6",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E03",
+    "window_byte_offset": "0004FC06",
+    "dfu_byte_offset": "0012DCCC",
+    "raw": "00b00820",
+    "interpretation": ".word 0xB000,0x2008 ; unknown_opcode_or_data; prefixes=1"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E07",
+    "window_byte_offset": "0004FC0E",
+    "dfu_byte_offset": "0012DCD4",
+    "raw": "0820",
+    "interpretation": ".word 0x2008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E0A",
+    "window_byte_offset": "0004FC14",
+    "dfu_byte_offset": "0012DCDA",
+    "raw": "0420",
+    "interpretation": ".word 0x2004 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E0B",
+    "window_byte_offset": "0004FC16",
+    "dfu_byte_offset": "0012DCDC",
+    "raw": "0860",
+    "interpretation": ".word 0x6008 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E17",
+    "window_byte_offset": "0004FC2E",
+    "dfu_byte_offset": "0012DCF4",
+    "raw": "00b0042e",
+    "interpretation": ".word 0xB000,0x2E04 ; unknown_opcode_or_data; prefixes=1"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E1C",
+    "window_byte_offset": "0004FC38",
+    "dfu_byte_offset": "0012DCFE",
+    "raw": "00b00826",
+    "interpretation": ".word 0xB000,0x2608 ; unknown_opcode_or_data; prefixes=1"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E1E",
+    "window_byte_offset": "0004FC3C",
+    "dfu_byte_offset": "0012DD02",
+    "raw": "0829",
+    "interpretation": ".word 0x2908 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E1F",
+    "window_byte_offset": "0004FC3E",
+    "dfu_byte_offset": "0012DD04",
+    "raw": "0826",
+    "interpretation": ".word 0x2608 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E20",
+    "window_byte_offset": "0004FC40",
+    "dfu_byte_offset": "0012DD06",
+    "raw": "0829",
+    "interpretation": ".word 0x2908 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "027E21",
+    "window_byte_offset": "0004FC42",
+    "dfu_byte_offset": "0012DD08",
+    "raw": "0826",
+    "interpretation": ".word 0x2608 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028017",
+    "window_byte_offset": "0005002E",
+    "dfu_byte_offset": "0012E0F4",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02802E",
+    "window_byte_offset": "0005005C",
+    "dfu_byte_offset": "0012E122",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02803C",
+    "window_byte_offset": "00050078",
+    "dfu_byte_offset": "0012E13E",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02804D",
+    "window_byte_offset": "0005009A",
+    "dfu_byte_offset": "0012E160",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028100",
+    "window_byte_offset": "00050200",
+    "dfu_byte_offset": "0012E2C6",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02810A",
+    "window_byte_offset": "00050214",
+    "dfu_byte_offset": "0012E2DA",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02812B",
+    "window_byte_offset": "00050256",
+    "dfu_byte_offset": "0012E31C",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028141",
+    "window_byte_offset": "00050282",
+    "dfu_byte_offset": "0012E348",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028170",
+    "window_byte_offset": "000502E0",
+    "dfu_byte_offset": "0012E3A6",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0281A6",
+    "window_byte_offset": "0005034C",
+    "dfu_byte_offset": "0012E412",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028204",
+    "window_byte_offset": "00050408",
+    "dfu_byte_offset": "0012E4CE",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028284",
+    "window_byte_offset": "00050508",
+    "dfu_byte_offset": "0012E5CE",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02828E",
+    "window_byte_offset": "0005051C",
+    "dfu_byte_offset": "0012E5E2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0282A8",
+    "window_byte_offset": "00050550",
+    "dfu_byte_offset": "0012E616",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0282CC",
+    "window_byte_offset": "00050598",
+    "dfu_byte_offset": "0012E65E",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0282E2",
+    "window_byte_offset": "000505C4",
+    "dfu_byte_offset": "0012E68A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0282EA",
+    "window_byte_offset": "000505D4",
+    "dfu_byte_offset": "0012E69A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0282F4",
+    "window_byte_offset": "000505E8",
+    "dfu_byte_offset": "0012E6AE",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028304",
+    "window_byte_offset": "00050608",
+    "dfu_byte_offset": "0012E6CE",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02830F",
+    "window_byte_offset": "0005061E",
+    "dfu_byte_offset": "0012E6E4",
+    "raw": "088d",
+    "interpretation": ".word 0x8D08 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028311",
+    "window_byte_offset": "00050622",
+    "dfu_byte_offset": "0012E6E8",
+    "raw": "0c8d",
+    "interpretation": ".word 0x8D0C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028377",
+    "window_byte_offset": "000506EE",
+    "dfu_byte_offset": "0012E7B4",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028381",
+    "window_byte_offset": "00050702",
+    "dfu_byte_offset": "0012E7C8",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028384",
+    "window_byte_offset": "00050708",
+    "dfu_byte_offset": "0012E7CE",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02839E",
+    "window_byte_offset": "0005073C",
+    "dfu_byte_offset": "0012E802",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283A1",
+    "window_byte_offset": "00050742",
+    "dfu_byte_offset": "0012E808",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283A5",
+    "window_byte_offset": "0005074A",
+    "dfu_byte_offset": "0012E810",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283A8",
+    "window_byte_offset": "00050750",
+    "dfu_byte_offset": "0012E816",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283AF",
+    "window_byte_offset": "0005075E",
+    "dfu_byte_offset": "0012E824",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283B2",
+    "window_byte_offset": "00050764",
+    "dfu_byte_offset": "0012E82A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283B8",
+    "window_byte_offset": "00050770",
+    "dfu_byte_offset": "0012E836",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283BB",
+    "window_byte_offset": "00050776",
+    "dfu_byte_offset": "0012E83C",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283C5",
+    "window_byte_offset": "0005078A",
+    "dfu_byte_offset": "0012E850",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283DA",
+    "window_byte_offset": "000507B4",
+    "dfu_byte_offset": "0012E87A",
+    "raw": "0406",
+    "interpretation": ".word 0x0604 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283FD",
+    "window_byte_offset": "000507FA",
+    "dfu_byte_offset": "0012E8C0",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283FE",
+    "window_byte_offset": "000507FC",
+    "dfu_byte_offset": "0012E8C2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0283FF",
+    "window_byte_offset": "000507FE",
+    "dfu_byte_offset": "0012E8C4",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028400",
+    "window_byte_offset": "00050800",
+    "dfu_byte_offset": "0012E8C6",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028406",
+    "window_byte_offset": "0005080C",
+    "dfu_byte_offset": "0012E8D2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028416",
+    "window_byte_offset": "0005082C",
+    "dfu_byte_offset": "0012E8F2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02852C",
+    "window_byte_offset": "00050A58",
+    "dfu_byte_offset": "0012EB1E",
+    "raw": "090009006500",
+    "interpretation": ".word 0x0009,0x0009,0x0065 ; unresolved_modifier_chain; unsigned_modifier"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028574",
+    "window_byte_offset": "00050AE8",
+    "dfu_byte_offset": "0012EBAE",
+    "raw": "090009006500",
+    "interpretation": ".word 0x0009,0x0009,0x0065 ; unresolved_modifier_chain; unsigned_modifier"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0285CC",
+    "window_byte_offset": "00050B98",
+    "dfu_byte_offset": "0012EC5E",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0285DA",
+    "window_byte_offset": "00050BB4",
+    "dfu_byte_offset": "0012EC7A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0285E5",
+    "window_byte_offset": "00050BCA",
+    "dfu_byte_offset": "0012EC90",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0285EF",
+    "window_byte_offset": "00050BDE",
+    "dfu_byte_offset": "0012ECA4",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028603",
+    "window_byte_offset": "00050C06",
+    "dfu_byte_offset": "0012ECCC",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02860E",
+    "window_byte_offset": "00050C1C",
+    "dfu_byte_offset": "0012ECE2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028619",
+    "window_byte_offset": "00050C32",
+    "dfu_byte_offset": "0012ECF8",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028621",
+    "window_byte_offset": "00050C42",
+    "dfu_byte_offset": "0012ED08",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02862C",
+    "window_byte_offset": "00050C58",
+    "dfu_byte_offset": "0012ED1E",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028631",
+    "window_byte_offset": "00050C62",
+    "dfu_byte_offset": "0012ED28",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02863A",
+    "window_byte_offset": "00050C74",
+    "dfu_byte_offset": "0012ED3A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028645",
+    "window_byte_offset": "00050C8A",
+    "dfu_byte_offset": "0012ED50",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028650",
+    "window_byte_offset": "00050CA0",
+    "dfu_byte_offset": "0012ED66",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028659",
+    "window_byte_offset": "00050CB2",
+    "dfu_byte_offset": "0012ED78",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028660",
+    "window_byte_offset": "00050CC0",
+    "dfu_byte_offset": "0012ED86",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028668",
+    "window_byte_offset": "00050CD0",
+    "dfu_byte_offset": "0012ED96",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028673",
+    "window_byte_offset": "00050CE6",
+    "dfu_byte_offset": "0012EDAC",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02867E",
+    "window_byte_offset": "00050CFC",
+    "dfu_byte_offset": "0012EDC2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02868B",
+    "window_byte_offset": "00050D16",
+    "dfu_byte_offset": "0012EDDC",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0286D7",
+    "window_byte_offset": "00050DAE",
+    "dfu_byte_offset": "0012EE74",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0286EA",
+    "window_byte_offset": "00050DD4",
+    "dfu_byte_offset": "0012EE9A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0286F6",
+    "window_byte_offset": "00050DEC",
+    "dfu_byte_offset": "0012EEB2",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028702",
+    "window_byte_offset": "00050E04",
+    "dfu_byte_offset": "0012EECA",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02870F",
+    "window_byte_offset": "00050E1E",
+    "dfu_byte_offset": "0012EEE4",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028719",
+    "window_byte_offset": "00050E32",
+    "dfu_byte_offset": "0012EEF8",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028724",
+    "window_byte_offset": "00050E48",
+    "dfu_byte_offset": "0012EF0E",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028737",
+    "window_byte_offset": "00050E6E",
+    "dfu_byte_offset": "0012EF34",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02877B",
+    "window_byte_offset": "00050EF6",
+    "dfu_byte_offset": "0012EFBC",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028787",
+    "window_byte_offset": "00050F0E",
+    "dfu_byte_offset": "0012EFD4",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02879C",
+    "window_byte_offset": "00050F38",
+    "dfu_byte_offset": "0012EFFE",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0287A7",
+    "window_byte_offset": "00050F4E",
+    "dfu_byte_offset": "0012F014",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0287B2",
+    "window_byte_offset": "00050F64",
+    "dfu_byte_offset": "0012F02A",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "0287BD",
+    "window_byte_offset": "00050F7A",
+    "dfu_byte_offset": "0012F040",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028879",
+    "window_byte_offset": "000510F2",
+    "dfu_byte_offset": "0012F1B8",
+    "raw": "0407",
+    "interpretation": ".word 0x0704 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02888A",
+    "window_byte_offset": "00051114",
+    "dfu_byte_offset": "0012F1DA",
+    "raw": "0407",
+    "interpretation": ".word 0x0704 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028A60",
+    "window_byte_offset": "000514C0",
+    "dfu_byte_offset": "0012F586",
+    "raw": "090009000300",
+    "interpretation": ".word 0x0009,0x0009,0x0003 ; unresolved_modifier_chain; unsigned_modifier"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028AB9",
+    "window_byte_offset": "00051572",
+    "dfu_byte_offset": "0012F638",
+    "raw": "090009000a00",
+    "interpretation": ".word 0x0009,0x0009,0x000A ; unresolved_modifier_chain; unsigned_modifier"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028AE5",
+    "window_byte_offset": "000515CA",
+    "dfu_byte_offset": "0012F690",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028B15",
+    "window_byte_offset": "0005162A",
+    "dfu_byte_offset": "0012F6F0",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028B29",
+    "window_byte_offset": "00051652",
+    "dfu_byte_offset": "0012F718",
+    "raw": "0407",
+    "interpretation": ".word 0x0704 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028B33",
+    "window_byte_offset": "00051666",
+    "dfu_byte_offset": "0012F72C",
+    "raw": "0d00",
+    "interpretation": ".word 0x000D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028BFF",
+    "window_byte_offset": "000517FE",
+    "dfu_byte_offset": "0012F8C4",
+    "raw": "0404",
+    "interpretation": ".word 0x0404 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C00",
+    "window_byte_offset": "00051800",
+    "dfu_byte_offset": "0012F8C6",
+    "raw": "0404",
+    "interpretation": ".word 0x0404 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C10",
+    "window_byte_offset": "00051820",
+    "dfu_byte_offset": "0012F8E6",
+    "raw": "0405",
+    "interpretation": ".word 0x0504 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C11",
+    "window_byte_offset": "00051822",
+    "dfu_byte_offset": "0012F8E8",
+    "raw": "0405",
+    "interpretation": ".word 0x0504 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C14",
+    "window_byte_offset": "00051828",
+    "dfu_byte_offset": "0012F8EE",
+    "raw": "0805",
+    "interpretation": ".word 0x0508 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C15",
+    "window_byte_offset": "0005182A",
+    "dfu_byte_offset": "0012F8F0",
+    "raw": "0805",
+    "interpretation": ".word 0x0508 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C28",
+    "window_byte_offset": "00051850",
+    "dfu_byte_offset": "0012F916",
+    "raw": "00070406",
+    "interpretation": ".word 0x0700,0x0604 ; unknown_opcode_or_data; prefixes=1"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C2A",
+    "window_byte_offset": "00051854",
+    "dfu_byte_offset": "0012F91A",
+    "raw": "0406",
+    "interpretation": ".word 0x0604 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C31",
+    "window_byte_offset": "00051862",
+    "dfu_byte_offset": "0012F928",
+    "raw": "0806",
+    "interpretation": ".word 0x0608 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C32",
+    "window_byte_offset": "00051864",
+    "dfu_byte_offset": "0012F92A",
+    "raw": "0806",
+    "interpretation": ".word 0x0608 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C4C",
+    "window_byte_offset": "00051898",
+    "dfu_byte_offset": "0012F95E",
+    "raw": "00070807",
+    "interpretation": ".word 0x0700,0x0708 ; unknown_opcode_or_data; prefixes=1"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C4E",
+    "window_byte_offset": "0005189C",
+    "dfu_byte_offset": "0012F962",
+    "raw": "0807",
+    "interpretation": ".word 0x0708 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C50",
+    "window_byte_offset": "000518A0",
+    "dfu_byte_offset": "0012F966",
+    "raw": "0807",
+    "interpretation": ".word 0x0708 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C51",
+    "window_byte_offset": "000518A2",
+    "dfu_byte_offset": "0012F968",
+    "raw": "0407",
+    "interpretation": ".word 0x0704 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C52",
+    "window_byte_offset": "000518A4",
+    "dfu_byte_offset": "0012F96A",
+    "raw": "0407",
+    "interpretation": ".word 0x0704 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028C54",
+    "window_byte_offset": "000518A8",
+    "dfu_byte_offset": "0012F96E",
+    "raw": "0407",
+    "interpretation": ".word 0x0704 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028D60",
+    "window_byte_offset": "00051AC0",
+    "dfu_byte_offset": "0012FB86",
+    "raw": "0902",
+    "interpretation": ".word 0x0209 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028D61",
+    "window_byte_offset": "00051AC2",
+    "dfu_byte_offset": "0012FB88",
+    "raw": "0d02",
+    "interpretation": ".word 0x020D ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028E22",
+    "window_byte_offset": "00051C44",
+    "dfu_byte_offset": "0012FD0A",
+    "raw": "0c38",
+    "interpretation": ".word 0x380C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028E45",
+    "window_byte_offset": "00051C8A",
+    "dfu_byte_offset": "0012FD50",
+    "raw": "0c8f",
+    "interpretation": ".word 0x8F0C ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "028E51",
+    "window_byte_offset": "00051CA2",
+    "dfu_byte_offset": "0012FD68",
+    "raw": "084e",
+    "interpretation": ".word 0x4E08 ; unknown_opcode_or_data"
+  },
+  {
+    "listing": "vm_body_provisional.asm",
+    "word_index": "02919D",
+    "window_byte_offset": "0005233A",
+    "dfu_byte_offset": "00130400",
+    "raw": "0900089d",
+    "interpretation": ".word 0x0009,0x9D08 ; unknown_opcode_or_data; unsigned_modifier"
+  }
+]

@@ -1,0 +1,614 @@
+; ANALYSIS ONLY: unmodified instruction excerpts. Addresses are VM CODE WORD indices.
+; Raw byte columns map to the original DFU. Analyst titles are inferred roles.
+
+; activity filter and idle timer
+000BC9 | 00001792 | 000DF858 | 1710 | ld AL, @(0x10,Y)
+000BCA | 00001794 | 000DF85A | 00a034ff | add AL, #0x9FFF ; prefixes=1
+000BCC | 00001798 | 000DF85E | 000184eb | cmp AL, #0xEB ; prefixes=1
+000BCE | 0000179C | 000DF862 | f82d | bcc word_0x000BFB ; target_input_byte=0x17F6
+000BCF | 0000179E | 000DF864 | 007634e0 | add AL, #0x75E0 ; prefixes=1
+000BD1 | 000017A2 | 000DF868 | 25fc | st AL, @0xFFFC
+000BD2 | 000017A4 | 000DF86A | 00f69c3d | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000BD4 | 000017A8 | 000DF86E | 19e1 | ld X, @0xFFE1
+000BD5 | 000017AA | 000DF870 | 09fe | brxl
+000BD6 | 000017AC | 000DF872 | 19f2 | ld X, @0xFFF2
+000BD7 | 000017AE | 000DF874 | 1619 | ld AL, @(0x19,X)
+000BD8 | 000017B0 | 000DF876 | 345a | add AL, #0x5A
+000BD9 | 000017B2 | 000DF878 | 25fc | st AL, @0xFFFC
+000BDA | 000017B4 | 000DF87A | 00f69c35 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000BDC | 000017B8 | 000DF87E | 8400 | cmp AL, #0x0
+000BDD | 000017BA | 000DF880 | f43b | beq word_0x000C18 ; target_input_byte=0x1830
+000BDE | 000017BC | 000DF882 | 00051408 | ld AL, #0x508 ; prefixes=1
+000BE0 | 000017C0 | 000DF886 | 006110d8 | ld AH, #0x60D8 ; prefixes=1
+000BE2 | 000017C4 | 000DF88A | 000200549cdd | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000BE5 | 000017CA | 000DF890 | 25ff | st AL, @0xFFFF
+000BE6 | 000017CC | 000DF892 | 1400 | ld AL, #0x0
+000BE7 | 000017CE | 000DF894 | 2700 | st AL, @(0x0,Y)
+000BE8 | 000017D0 | 000DF896 | 15ff | ld AL, @0xFFFF
+000BE9 | 000017D2 | 000DF898 | 19f2 | ld X, @0xFFF2
+000BEA | 000017D4 | 000DF89A | 1619 | ld AL, @(0x19,X)
+000BEB | 000017D6 | 000DF89C | 345a | add AL, #0x5A
+000BEC | 000017D8 | 000DF89E | 25fc | st AL, @0xFFFC
+000BED | 000017DA | 000DF8A0 | 00f69c22 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000BEF | 000017DE | 000DF8A4 | 0900000490e8 | umult #0x3E8 ; prefixes=1; unsigned_modifier
+000BF2 | 000017E4 | 000DF8AA | 2301 | st AH, @(0x1,Y)
+000BF3 | 000017E6 | 000DF8AC | 2702 | st AL, @(0x2,Y)
+000BF4 | 000017E8 | 000DF8AE | 00051408 | ld AL, #0x508 ; prefixes=1
+000BF6 | 000017EC | 000DF8B2 | 006110d8 | ld AH, #0x60D8 ; prefixes=1
+000BF8 | 000017F0 | 000DF8B6 | 00f49c65 | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000BFA | 000017F4 | 000DF8BA | e01e | bra word_0x000C18 ; target_input_byte=0x1830
+
+; main event switch
+000C18 | 00001830 | 000DF8F6 | 1710 | ld AL, @(0x10,Y)
+000C19 | 00001832 | 000DF8F8 | 00a034ff | add AL, #0x9FFF ; prefixes=1
+000C1B | 00001836 | 000DF8FC | 000184fe | cmp AL, #0xFE ; prefixes=1
+000C1D | 0000183A | 000DF900 | 0010f850 | bcc word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000C1F | 0000183E | 000DF904 | 007734cb | add AL, #0x76CB ; prefixes=1
+000C21 | 00001842 | 000DF908 | 25fc | st AL, @0xFFFC
+000C22 | 00001844 | 000DF90A | 00f69ced | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000C24 | 00001848 | 000DF90E | 19e1 | ld X, @0xFFE1
+000C25 | 0000184A | 000DF910 | 09fe | brxl
+000C26 | 0000184C | 000DF912 | 25ff | st AL, @0xFFFF
+000C27 | 0000184E | 000DF914 | 1400 | ld AL, #0x0
+000C28 | 00001850 | 000DF916 | 25f8 | st AL, @0xFFF8
+000C29 | 00001852 | 000DF918 | 15ff | ld AL, @0xFFFF
+000C2A | 00001854 | 000DF91A | 19f2 | ld X, @0xFFF2
+000C2B | 00001856 | 000DF91C | 123f | ld AH, @(0x3F,X)
+000C2C | 00001858 | 000DF91E | 0900a402 | lsr #0x2 ; unsigned_modifier
+000C2E | 0000185C | 000DF922 | c001 | and AH, #0x1
+000C2F | 0000185E | 000DF924 | 8000 | cmp AH, #0x0
+000C30 | 00001860 | 000DF926 | f005 | bne word_0x000C35 ; target_input_byte=0x186A
+000C31 | 00001862 | 000DF928 | 25ff | st AL, @0xFFFF
+000C32 | 00001864 | 000DF92A | 1401 | ld AL, #0x1
+000C33 | 00001866 | 000DF92C | 25f8 | st AL, @0xFFF8
+000C34 | 00001868 | 000DF92E | 15ff | ld AL, @0xFFFF
+000C35 | 0000186A | 000DF930 | 25ff | st AL, @0xFFFF
+000C36 | 0000186C | 000DF932 | 15f8 | ld AL, @0xFFF8
+000C37 | 0000186E | 000DF934 | 2700 | st AL, @(0x0,Y)
+000C38 | 00001870 | 000DF936 | 15ff | ld AL, @0xFFFF
+000C39 | 00001872 | 000DF938 | 1401 | ld AL, #0x1
+000C3A | 00001874 | 000DF93A | 2701 | st AL, @(0x1,Y)
+000C3B | 00001876 | 000DF93C | 00051408 | ld AL, #0x508 ; prefixes=1
+000C3D | 0000187A | 000DF940 | 1001 | ld AH, #0x1
+000C3E | 0000187C | 000DF942 | 000200b09cc5 | bsr word_0x01BC05 ; prefixes=2; target_input_byte=0x3780A
+000C41 | 00001882 | 000DF948 | 0010e02c | bra word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+
+; power-off event handler
+000CD1 | 000019A2 | 000DFA68 | 1b11 | ld X, @(0x11,Y)
+000CD2 | 000019A4 | 000DFA6A | 8800 | cmp X, #0x0
+000CD3 | 000019A6 | 000DFA6C | f004 | bne word_0x000CD7 ; target_input_byte=0x19AE
+000CD4 | 000019A8 | 000DFA6E | 1000 | ld AH, #0x0
+000CD5 | 000019AA | 000DFA70 | 2312 | st AH, @(0x12,Y)
+000CD6 | 000019AC | 000DFA72 | 2313 | st AH, @(0x13,Y)
+000CD7 | 000019AE | 000DFA74 | 00f79c57 | bsr word_0x00042F ; prefixes=1; target_input_byte=0x85E
+000CD9 | 000019B2 | 000DFA78 | 8401 | cmp AL, #0x1
+000CDA | 000019B4 | 000DFA7A | f024 | bne word_0x000CFE ; target_input_byte=0x19FC
+000CDB | 000019B6 | 000DFA7C | 19f2 | ld X, @0xFFF2
+000CDC | 000019B8 | 000DFA7E | 165a | ld AL, @(0x5A,X)
+000CDD | 000019BA | 000DFA80 | 0040c400 | and AL, #0x4000 ; prefixes=1
+000CDF | 000019BE | 000DFA84 | 8400 | cmp AL, #0x0
+000CE0 | 000019C0 | 000DFA86 | f01e | bne word_0x000CFE ; target_input_byte=0x19FC
+000CE1 | 000019C2 | 000DFA88 | 1401 | ld AL, #0x1
+000CE2 | 000019C4 | 000DFA8A | 00279c9b | bsr word_0x00337E ; prefixes=1; target_input_byte=0x66FC
+000CE4 | 000019C8 | 000DFA8E | 1464 | ld AL, #0x64
+000CE5 | 000019CA | 000DFA90 | 00209ce9 | bsr word_0x002CCF ; prefixes=1; target_input_byte=0x599E
+000CE7 | 000019CE | 000DFA94 | 1400 | ld AL, #0x0
+000CE8 | 000019D0 | 000DFA96 | 00f79c4c | bsr word_0x000435 ; prefixes=1; target_input_byte=0x86A
+000CEA | 000019D4 | 000DFA9A | 00269c75 | bsr word_0x003360 ; prefixes=1; target_input_byte=0x66C0
+000CEC | 000019D8 | 000DFA9E | 1400 | ld AL, #0x0
+000CED | 000019DA | 000DFAA0 | 00259c7c | bsr word_0x00326A ; prefixes=1; target_input_byte=0x64D4
+000CEF | 000019DE | 000DFAA4 | 25ff | st AL, @0xFFFF
+000CF0 | 000019E0 | 000DFAA6 | 1400 | ld AL, #0x0
+000CF1 | 000019E2 | 000DFAA8 | 2700 | st AL, @(0x0,Y)
+000CF2 | 000019E4 | 000DFAAA | 1400 | ld AL, #0x0
+000CF3 | 000019E6 | 000DFAAC | 2701 | st AL, @(0x1,Y)
+000CF4 | 000019E8 | 000DFAAE | 000214f4 | ld AL, #0x1F4 ; prefixes=1
+000CF6 | 000019EC | 000DFAB2 | 2702 | st AL, @(0x2,Y)
+000CF7 | 000019EE | 000DFAB4 | 15ff | ld AL, @0xFFFF
+000CF8 | 000019F0 | 000DFAB6 | 00051408 | ld AL, #0x508 ; prefixes=1
+000CFA | 000019F4 | 000DFABA | 00601002 | ld AH, #0x6002 ; prefixes=1
+000CFC | 000019F8 | 000DFABE | 0010e0e7 | bra word_0x001CE4 ; prefixes=1; target_input_byte=0x39C8
+000CFE | 000019FC | 000DFAC2 | 00051408 | ld AL, #0x508 ; prefixes=1
+000D00 | 00001A00 | 000DFAC6 | 006110a4 | ld AH, #0x60A4 ; prefixes=1
+000D02 | 00001A04 | 000DFACA | 000200539cbd | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000D05 | 00001A0A | 000DFAD0 | 1400 | ld AL, #0x0
+000D06 | 00001A0C | 000DFAD2 | 00f89c2e | bsr word_0x000535 ; prefixes=1; target_input_byte=0xA6A
+000D08 | 00001A10 | 000DFAD6 | 19f2 | ld X, @0xFFF2
+000D09 | 00001A12 | 000DFAD8 | 123f | ld AH, @(0x3F,X)
+000D0A | 00001A14 | 000DFADA | 0900a40f | lsr #0xF ; unsigned_modifier
+000D0C | 00001A18 | 000DFADE | 8000 | cmp AH, #0x0
+000D0D | 00001A1A | 000DFAE0 | 0001f4c8 | beq word_0x000DD6 ; prefixes=1; target_input_byte=0x1BAC
+000D0F | 00001A1E | 000DFAE4 | 19f2 | ld X, @0xFFF2
+000D10 | 00001A20 | 000DFAE6 | 125a | ld AH, @(0x5A,X)
+000D11 | 00001A22 | 000DFAE8 | 15e0 | ld AL, @0xFFE0
+000D12 | 00001A24 | 000DFAEA | 0040c400 | and AL, #0x4000 ; prefixes=1
+000D14 | 00001A28 | 000DFAEE | 8400 | cmp AL, #0x0
+000D15 | 00001A2A | 000DFAF0 | f409 | beq word_0x000D1E ; target_input_byte=0x1A3C
+000D16 | 00001A2C | 000DFAF2 | 15e0 | ld AL, @0xFFE0
+000D17 | 00001A2E | 000DFAF4 | 00c0c4ff | and AL, #0xBFFF ; prefixes=1
+000D19 | 00001A32 | 000DFAF8 | 19f2 | ld X, @0xFFF2
+000D1A | 00001A34 | 000DFAFA | 265a | st AL, @(0x5A,X)
+000D1B | 00001A36 | 000DFAFC | 1400 | ld AL, #0x0
+000D1C | 00001A38 | 000DFAFE | 2713 | st AL, @(0x13,Y)
+000D1D | 00001A3A | 000DFB00 | e003 | bra word_0x000D20 ; target_input_byte=0x1A40
+000D1E | 00001A3C | 000DFB02 | 1801 | ld X, #0x1
+000D1F | 00001A3E | 000DFB04 | 2b13 | st X, @(0x13,Y)
+000D20 | 00001A40 | 000DFB06 | 29ff | st X, @0xFFFF
+000D21 | 00001A42 | 000DFB08 | 0005185e | ld X, #0x55E ; prefixes=1
+000D23 | 00001A46 | 000DFB0C | 29fc | st X, @0xFFFC
+000D24 | 00001A48 | 000DFB0E | 19ff | ld X, @0xFFFF
+000D25 | 00001A4A | 000DFB10 | 21fd | st AH, @0xFFFD
+000D26 | 00001A4C | 000DFB12 | 25ff | st AL, @0xFFFF
+000D27 | 00001A4E | 000DFB14 | 1000 | ld AH, #0x0
+000D28 | 00001A50 | 000DFB16 | 1400 | ld AL, #0x0
+000D29 | 00001A52 | 000DFB18 | 00f69ce3 | bsr word_0x00030D ; prefixes=1; target_input_byte=0x61A
+000D2B | 00001A56 | 000DFB1C | 11fd | ld AH, @0xFFFD
+000D2C | 00001A58 | 000DFB1E | 15ff | ld AL, @0xFFFF
+000D2D | 00001A5A | 000DFB20 | 25ff | st AL, @0xFFFF
+000D2E | 00001A5C | 000DFB22 | 1400 | ld AL, #0x0
+000D2F | 00001A5E | 000DFB24 | 2700 | st AL, @(0x0,Y)
+000D30 | 00001A60 | 000DFB26 | 1400 | ld AL, #0x0
+000D31 | 00001A62 | 000DFB28 | 2701 | st AL, @(0x1,Y)
+000D32 | 00001A64 | 000DFB2A | 2702 | st AL, @(0x2,Y)
+000D33 | 00001A66 | 000DFB2C | 15ff | ld AL, @0xFFFF
+000D34 | 00001A68 | 000DFB2E | 00051408 | ld AL, #0x508 ; prefixes=1
+000D36 | 00001A6C | 000DFB32 | 006110e5 | ld AH, #0x60E5 ; prefixes=1
+000D38 | 00001A70 | 000DFB36 | 00f39c25 | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000D3A | 00001A74 | 000DFB3A | 0001008d9c8d | bsr word_0x0099C9 ; prefixes=2; target_input_byte=0x13392
+000D3D | 00001A7A | 000DFB40 | 00399ce6 | bsr word_0x004624 ; prefixes=1; target_input_byte=0x8C48
+000D3F | 00001A7E | 000DFB44 | 000100899cb5 | bsr word_0x0095F6 ; prefixes=2; target_input_byte=0x12BEC
+000D42 | 00001A84 | 000DFB4A | 003b9cbe | bsr word_0x004801 ; prefixes=1; target_input_byte=0x9002
+000D44 | 00001A88 | 000DFB4E | 1400 | ld AL, #0x0
+000D45 | 00001A8A | 000DFB50 | 100a | ld AH, #0xA
+000D46 | 00001A8C | 000DFB52 | 000100909cc6 | bsr word_0x009D0E ; prefixes=2; target_input_byte=0x13A1C
+000D49 | 00001A92 | 000DFB58 | 005b9cbc | bsr word_0x006806 ; prefixes=1; target_input_byte=0xD00C
+000D4B | 00001A96 | 000DFB5C | 19f2 | ld X, @0xFFF2
+000D4C | 00001A98 | 000DFB5E | 1619 | ld AL, @(0x19,X)
+000D4D | 00001A9A | 000DFB60 | 3450 | add AL, #0x50
+000D4E | 00001A9C | 000DFB62 | 25fc | st AL, @0xFFFC
+000D4F | 00001A9E | 000DFB64 | 00f59cc0 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000D51 | 00001AA2 | 000DFB68 | 8400 | cmp AL, #0x0
+000D52 | 00001AA4 | 000DFB6A | f408 | beq word_0x000D5A ; target_input_byte=0x1AB4
+000D53 | 00001AA6 | 000DFB6C | 00051408 | ld AL, #0x508 ; prefixes=1
+000D55 | 00001AAA | 000DFB70 | 0060106a | ld AH, #0x606A ; prefixes=1
+000D57 | 00001AAE | 000DFB74 | 000200529c68 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000D5A | 00001AB4 | 000DFB7A | 00051408 | ld AL, #0x508 ; prefixes=1
+000D5C | 00001AB8 | 000DFB7E | 00601016 | ld AH, #0x6016 ; prefixes=1
+000D5E | 00001ABC | 000DFB82 | 000200529c61 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000D61 | 00001AC2 | 000DFB88 | 00051408 | ld AL, #0x508 ; prefixes=1
+000D63 | 00001AC6 | 000DFB8C | 00611097 | ld AH, #0x6097 ; prefixes=1
+000D65 | 00001ACA | 000DFB90 | 000200529c5a | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000D68 | 00001AD0 | 000DFB96 | 00051408 | ld AL, #0x508 ; prefixes=1
+000D6A | 00001AD4 | 000DFB9A | 00611099 | ld AH, #0x6099 ; prefixes=1
+000D6C | 00001AD8 | 000DFB9E | 000200529c53 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000D6F | 00001ADE | 000DFBA4 | 00051408 | ld AL, #0x508 ; prefixes=1
+000D71 | 00001AE2 | 000DFBA8 | 006110d1 | ld AH, #0x60D1 ; prefixes=1
+000D73 | 00001AE6 | 000DFBAC | 000200529c4c | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000D76 | 00001AEC | 000DFBB2 | 25ff | st AL, @0xFFFF
+000D77 | 00001AEE | 000DFBB4 | 1400 | ld AL, #0x0
+000D78 | 00001AF0 | 000DFBB6 | 2700 | st AL, @(0x0,Y)
+000D79 | 00001AF2 | 000DFBB8 | 1400 | ld AL, #0x0
+000D7A | 00001AF4 | 000DFBBA | 2701 | st AL, @(0x1,Y)
+000D7B | 00001AF6 | 000DFBBC | 1464 | ld AL, #0x64
+000D7C | 00001AF8 | 000DFBBE | 2702 | st AL, @(0x2,Y)
+000D7D | 00001AFA | 000DFBC0 | 15ff | ld AL, @0xFFFF
+000D7E | 00001AFC | 000DFBC2 | 00051408 | ld AL, #0x508 ; prefixes=1
+000D80 | 00001B00 | 000DFBC6 | 006110d1 | ld AH, #0x60D1 ; prefixes=1
+000D82 | 00001B04 | 000DFBCA | 00f39cdb | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000D84 | 00001B08 | 000DFBCE | 19f2 | ld X, @0xFFF2
+000D85 | 00001B0A | 000DFBD0 | 1639 | ld AL, @(0x39,X)
+000D86 | 00001B0C | 000DFBD2 | 29ff | st X, @0xFFFF
+000D87 | 00001B0E | 000DFBD4 | 19e1 | ld X, @0xFFE1
+000D88 | 00001B10 | 000DFBD6 | 383e | add X, #0x3E
+000D89 | 00001B12 | 000DFBD8 | 29fc | st X, @0xFFFC
+000D8A | 00001B14 | 000DFBDA | 19ff | ld X, @0xFFFF
+000D8B | 00001B16 | 000DFBDC | 1000 | ld AH, #0x0
+000D8C | 00001B18 | 000DFBDE | 00f59c05 | bsr word_0x000292 ; prefixes=1; target_input_byte=0x524
+000D8E | 00001B1C | 000DFBE2 | 19f2 | ld X, @0xFFF2
+000D8F | 00001B1E | 000DFBE4 | 1639 | ld AL, @(0x39,X)
+000D90 | 00001B20 | 000DFBE6 | 19e1 | ld X, @0xFFE1
+000D91 | 00001B22 | 000DFBE8 | 383f | add X, #0x3F
+000D92 | 00001B24 | 000DFBEA | 29fc | st X, @0xFFFC
+000D93 | 00001B26 | 000DFBEC | 00f59cfe | bsr word_0x000292 ; prefixes=1; target_input_byte=0x524
+000D95 | 00001B2A | 000DFBF0 | 19f2 | ld X, @0xFFF2
+000D96 | 00001B2C | 000DFBF2 | 1226 | ld AH, @(0x26,X)
+000D97 | 00001B2E | 000DFBF4 | 0900a405 | lsr #0x5 ; unsigned_modifier
+000D99 | 00001B32 | 000DFBF8 | c001 | and AH, #0x1
+000D9A | 00001B34 | 000DFBFA | 8000 | cmp AH, #0x0
+000D9B | 00001B36 | 000DFBFC | f41d | beq word_0x000DB8 ; target_input_byte=0x1B70
+000D9C | 00001B38 | 000DFBFE | 19f2 | ld X, @0xFFF2
+000D9D | 00001B3A | 000DFC00 | 164a | ld AL, @(0x4A,X)
+000D9E | 00001B3C | 000DFC02 | 00e0c4ff | and AL, #0xDFFF ; prefixes=1
+000DA0 | 00001B40 | 000DFC06 | 19f2 | ld X, @0xFFF2
+000DA1 | 00001B42 | 000DFC08 | 264a | st AL, @(0x4A,X)
+000DA2 | 00001B44 | 000DFC0A | 25ff | st AL, @0xFFFF
+000DA3 | 00001B46 | 000DFC0C | 1400 | ld AL, #0x0
+000DA4 | 00001B48 | 000DFC0E | 2700 | st AL, @(0x0,Y)
+000DA5 | 00001B4A | 000DFC10 | 15ff | ld AL, @0xFFFF
+000DA6 | 00001B4C | 000DFC12 | 19f2 | ld X, @0xFFF2
+000DA7 | 00001B4E | 000DFC14 | 1619 | ld AL, @(0x19,X)
+000DA8 | 00001B50 | 000DFC16 | 345b | add AL, #0x5B
+000DA9 | 00001B52 | 000DFC18 | 25fc | st AL, @0xFFFC
+000DAA | 00001B54 | 000DFC1A | 00f49c65 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000DAC | 00001B58 | 000DFC1E | 0900000490e8 | umult #0x3E8 ; prefixes=1; unsigned_modifier
+000DAF | 00001B5E | 000DFC24 | 2301 | st AH, @(0x1,Y)
+000DB0 | 00001B60 | 000DFC26 | 2702 | st AL, @(0x2,Y)
+000DB1 | 00001B62 | 000DFC28 | 00051408 | ld AL, #0x508 ; prefixes=1
+000DB3 | 00001B66 | 000DFC2C | 00601071 | ld AH, #0x6071 ; prefixes=1
+000DB5 | 00001B6A | 000DFC30 | 00f39ca8 | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000DB7 | 00001B6E | 000DFC34 | e007 | bra word_0x000DBE ; target_input_byte=0x1B7C
+000DB8 | 00001B70 | 000DFC36 | 19f2 | ld X, @0xFFF2
+000DB9 | 00001B72 | 000DFC38 | 164a | ld AL, @(0x4A,X)
+000DBA | 00001B74 | 000DFC3A | 0020b400 | or AL, #0x2000 ; prefixes=1
+000DBC | 00001B78 | 000DFC3E | 19f2 | ld X, @0xFFF2
+000DBD | 00001B7A | 000DFC40 | 264a | st AL, @(0x4A,X)
+000DBE | 00001B7C | 000DFC42 | 00051408 | ld AL, #0x508 ; prefixes=1
+000DC0 | 00001B80 | 000DFC46 | 006110c4 | ld AH, #0x60C4 ; prefixes=1
+000DC2 | 00001B84 | 000DFC4A | 000200529cfd | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000DC5 | 00001B8A | 000DFC50 | 25ff | st AL, @0xFFFF
+000DC6 | 00001B8C | 000DFC52 | 1400 | ld AL, #0x0
+000DC7 | 00001B8E | 000DFC54 | 2700 | st AL, @(0x0,Y)
+000DC8 | 00001B90 | 000DFC56 | 1400 | ld AL, #0x0
+000DC9 | 00001B92 | 000DFC58 | 2701 | st AL, @(0x1,Y)
+000DCA | 00001B94 | 000DFC5A | 000614dc | ld AL, #0x5DC ; prefixes=1
+000DCC | 00001B98 | 000DFC5E | 2702 | st AL, @(0x2,Y)
+000DCD | 00001B9A | 000DFC60 | 15ff | ld AL, @0xFFFF
+000DCE | 00001B9C | 000DFC62 | 00051408 | ld AL, #0x508 ; prefixes=1
+000DD0 | 00001BA0 | 000DFC66 | 006110c4 | ld AH, #0x60C4 ; prefixes=1
+000DD2 | 00001BA4 | 000DFC6A | 00f39c8b | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000DD4 | 00001BA8 | 000DFC6E | 000fe099 | bra word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000DD6 | 00001BAC | 000DFC72 | 1800 | ld X, #0x0
+000DD7 | 00001BAE | 000DFC74 | 2b12 | st X, @(0x12,Y)
+000DD8 | 00001BB0 | 000DFC76 | 000fe095 | bra word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+
+; idle/standby handler and delayed power-off
+000DDA | 00001BB4 | 000DFC7A | 19f2 | ld X, @0xFFF2
+000DDB | 00001BB6 | 000DFC7C | 162d | ld AL, @(0x2D,X)
+000DDC | 00001BB8 | 000DFC7E | 8400 | cmp AL, #0x0
+000DDD | 00001BBA | 000DFC80 | 000ff090 | bne word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000DDF | 00001BBE | 000DFC84 | 1711 | ld AL, @(0x11,Y)
+000DE0 | 00001BC0 | 000DFC86 | 34ff | add AL, #0xFFFF
+000DE1 | 00001BC2 | 000DFC88 | 8403 | cmp AL, #0x3
+000DE2 | 00001BC4 | 000DFC8A | 000ff88b | bcc word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000DE4 | 00001BC8 | 000DFC8E | 00f69c56 | bsr word_0x00043B ; prefixes=1; target_input_byte=0x876
+000DE6 | 00001BCC | 000DFC92 | 8400 | cmp AL, #0x0
+000DE7 | 00001BCE | 000DFC94 | 000ff086 | bne word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000DE9 | 00001BD2 | 000DFC98 | 19f2 | ld X, @0xFFF2
+000DEA | 00001BD4 | 000DFC9A | 123a | ld AH, @(0x3A,X)
+000DEB | 00001BD6 | 000DFC9C | 19e0 | ld X, @0xFFE0
+000DEC | 00001BD8 | 000DFC9E | 3823 | add X, #0x23
+000DED | 00001BDA | 000DFCA0 | 29fc | st X, @0xFFFC
+000DEE | 00001BDC | 000DFCA2 | 00f49c21 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000DF0 | 00001BE0 | 000DFCA6 | 8401 | cmp AL, #0x1
+000DF1 | 00001BE2 | 000DFCA8 | 000ef47c | beq word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000DF3 | 00001BE6 | 000DFCAC | 19e0 | ld X, @0xFFE0
+000DF4 | 00001BE8 | 000DFCAE | 3824 | add X, #0x24
+000DF5 | 00001BEA | 000DFCB0 | 29fc | st X, @0xFFFC
+000DF6 | 00001BEC | 000DFCB2 | 00f49c19 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000DF8 | 00001BF0 | 000DFCB6 | 8401 | cmp AL, #0x1
+000DF9 | 00001BF2 | 000DFCB8 | 000ef474 | beq word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000DFB | 00001BF6 | 000DFCBC | 1401 | ld AL, #0x1
+000DFC | 00001BF8 | 000DFCBE | 00f69c38 | bsr word_0x000435 ; prefixes=1; target_input_byte=0x86A
+000DFE | 00001BFC | 000DFCC2 | 00299caa | bsr word_0x0036A9 ; prefixes=1; target_input_byte=0x6D52
+000E00 | 00001C00 | 000DFCC6 | 00259c65 | bsr word_0x003366 ; prefixes=1; target_input_byte=0x66CC
+000E02 | 00001C04 | 000DFCCA | 1401 | ld AL, #0x1
+000E03 | 00001C06 | 000DFCCC | 00249c66 | bsr word_0x00326A ; prefixes=1; target_input_byte=0x64D4
+000E05 | 00001C0A | 000DFCD0 | 1400 | ld AL, #0x0
+000E06 | 00001C0C | 000DFCD2 | 00259c77 | bsr word_0x00337E ; prefixes=1; target_input_byte=0x66FC
+000E08 | 00001C10 | 000DFCD6 | 19f2 | ld X, @0xFFF2
+000E09 | 00001C12 | 000DFCD8 | 1619 | ld AL, @(0x19,X)
+000E0A | 00001C14 | 000DFCDA | 3447 | add AL, #0x47
+000E0B | 00001C16 | 000DFCDC | 25fc | st AL, @0xFFFC
+000E0C | 00001C18 | 000DFCDE | 00f49c03 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000E0E | 00001C1C | 000DFCE2 | 8400 | cmp AL, #0x0
+000E0F | 00001C1E | 000DFCE4 | 000ef45e | beq word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E11 | 00001C22 | 000DFCE8 | 00051408 | ld AL, #0x508 ; prefixes=1
+000E13 | 00001C26 | 000DFCEC | 006110df | ld AH, #0x60DF ; prefixes=1
+000E15 | 00001C2A | 000DFCF0 | 000200529caa | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000E18 | 00001C30 | 000DFCF6 | 25ff | st AL, @0xFFFF
+000E19 | 00001C32 | 000DFCF8 | 1400 | ld AL, #0x0
+000E1A | 00001C34 | 000DFCFA | 2700 | st AL, @(0x0,Y)
+000E1B | 00001C36 | 000DFCFC | 15ff | ld AL, @0xFFFF
+000E1C | 00001C38 | 000DFCFE | 19f2 | ld X, @0xFFF2
+000E1D | 00001C3A | 000DFD00 | 1619 | ld AL, @(0x19,X)
+000E1E | 00001C3C | 000DFD02 | 3447 | add AL, #0x47
+000E1F | 00001C3E | 000DFD04 | 25fc | st AL, @0xFFFC
+000E20 | 00001C40 | 000DFD06 | 00f49cef | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000E22 | 00001C44 | 000DFD0A | 0900000490e8 | umult #0x3E8 ; prefixes=1; unsigned_modifier
+000E25 | 00001C4A | 000DFD10 | 2301 | st AH, @(0x1,Y)
+000E26 | 00001C4C | 000DFD12 | 2702 | st AL, @(0x2,Y)
+000E27 | 00001C4E | 000DFD14 | 00051408 | ld AL, #0x508 ; prefixes=1
+000E29 | 00001C52 | 000DFD18 | 006110df | ld AH, #0x60DF ; prefixes=1
+000E2B | 00001C56 | 000DFD1C | 00f29c32 | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000E2D | 00001C5A | 000DFD20 | 000ee040 | bra word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E2F | 00001C5E | 000DFD24 | 19f2 | ld X, @0xFFF2
+000E30 | 00001C60 | 000DFD26 | 165a | ld AL, @(0x5A,X)
+000E31 | 00001C62 | 000DFD28 | 0040b400 | or AL, #0x4000 ; prefixes=1
+000E33 | 00001C66 | 000DFD2C | 19f2 | ld X, @0xFFF2
+000E34 | 00001C68 | 000DFD2E | 265a | st AL, @(0x5A,X)
+000E35 | 00001C6A | 000DFD30 | 19f2 | ld X, @0xFFF2
+000E36 | 00001C6C | 000DFD32 | 162d | ld AL, @(0x2D,X)
+000E37 | 00001C6E | 000DFD34 | 8400 | cmp AL, #0x0
+000E38 | 00001C70 | 000DFD36 | 000ef035 | bne word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E3A | 00001C74 | 000DFD3A | 1711 | ld AL, @(0x11,Y)
+000E3B | 00001C76 | 000DFD3C | 34ff | add AL, #0xFFFF
+000E3C | 00001C78 | 000DFD3E | 8403 | cmp AL, #0x3
+000E3D | 00001C7A | 000DFD40 | 000ef830 | bcc word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E3F | 00001C7E | 000DFD44 | 00f69cfb | bsr word_0x00043B ; prefixes=1; target_input_byte=0x876
+000E41 | 00001C82 | 000DFD48 | 8400 | cmp AL, #0x0
+000E42 | 00001C84 | 000DFD4A | 000ef02b | bne word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E44 | 00001C88 | 000DFD4E | 19f2 | ld X, @0xFFF2
+000E45 | 00001C8A | 000DFD50 | 123a | ld AH, @(0x3A,X)
+000E46 | 00001C8C | 000DFD52 | 19e0 | ld X, @0xFFE0
+000E47 | 00001C8E | 000DFD54 | 3823 | add X, #0x23
+000E48 | 00001C90 | 000DFD56 | 29fc | st X, @0xFFFC
+000E49 | 00001C92 | 000DFD58 | 00f49cc6 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000E4B | 00001C96 | 000DFD5C | 8401 | cmp AL, #0x1
+000E4C | 00001C98 | 000DFD5E | 000ef421 | beq word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E4E | 00001C9C | 000DFD62 | 19e0 | ld X, @0xFFE0
+000E4F | 00001C9E | 000DFD64 | 3824 | add X, #0x24
+000E50 | 00001CA0 | 000DFD66 | 29fc | st X, @0xFFFC
+000E51 | 00001CA2 | 000DFD68 | 00f49cbe | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+000E53 | 00001CA6 | 000DFD6C | 8401 | cmp AL, #0x1
+000E54 | 00001CA8 | 000DFD6E | 000ef419 | beq word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E56 | 00001CAC | 000DFD72 | 00051408 | ld AL, #0x508 ; prefixes=1
+000E58 | 00001CB0 | 000DFD76 | 00601002 | ld AH, #0x6002 ; prefixes=1
+000E5A | 00001CB4 | 000DFD7A | 000200519c65 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000E5D | 00001CBA | 000DFD80 | 1400 | ld AL, #0x0
+000E5E | 00001CBC | 000DFD82 | 2700 | st AL, @(0x0,Y)
+000E5F | 00001CBE | 000DFD84 | 00051408 | ld AL, #0x508 ; prefixes=1
+000E61 | 00001CC2 | 000DFD88 | 00601002 | ld AH, #0x6002 ; prefixes=1
+000E63 | 00001CC6 | 000DFD8C | 000200519c4d | bsr word_0x025FB2 ; prefixes=2; target_input_byte=0x4BF64
+000E66 | 00001CCC | 000DFD92 | 000ee007 | bra word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+
+; resume path cancels power-off
+000E68 | 00001CD0 | 000DFD96 | 00f69cc6 | bsr word_0x00042F ; prefixes=1; target_input_byte=0x85E
+000E6A | 00001CD4 | 000DFD9A | 8401 | cmp AL, #0x1
+000E6B | 00001CD6 | 000DFD9C | 000ef002 | bne word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+000E6D | 00001CDA | 000DFDA0 | 1401 | ld AL, #0x1
+000E6E | 00001CDC | 000DFDA2 | 00259c0f | bsr word_0x00337E ; prefixes=1; target_input_byte=0x66FC
+000E70 | 00001CE0 | 000DFDA6 | 1464 | ld AL, #0x64
+000E71 | 00001CE2 | 000DFDA8 | 001e9c5d | bsr word_0x002CCF ; prefixes=1; target_input_byte=0x599E
+000E73 | 00001CE6 | 000DFDAC | 1400 | ld AL, #0x0
+000E74 | 00001CE8 | 000DFDAE | 00f69cc0 | bsr word_0x000435 ; prefixes=1; target_input_byte=0x86A
+000E76 | 00001CEC | 000DFDB2 | 00289c25 | bsr word_0x00369C ; prefixes=1; target_input_byte=0x6D38
+000E78 | 00001CF0 | 000DFDB6 | 00259ce7 | bsr word_0x003360 ; prefixes=1; target_input_byte=0x66C0
+000E7A | 00001CF4 | 000DFDBA | 1400 | ld AL, #0x0
+000E7B | 00001CF6 | 000DFDBC | 00249cee | bsr word_0x00326A ; prefixes=1; target_input_byte=0x64D4
+000E7D | 00001CFA | 000DFDC0 | 00051408 | ld AL, #0x508 ; prefixes=1
+000E7F | 00001CFE | 000DFDC4 | 006110df | ld AH, #0x60DF ; prefixes=1
+000E81 | 00001D02 | 000DFDC8 | 000200519c3e | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000E84 | 00001D08 | 000DFDCE | 00051408 | ld AL, #0x508 ; prefixes=1
+000E86 | 00001D0C | 000DFDD2 | 006110cb | ld AH, #0x60CB ; prefixes=1
+000E88 | 00001D10 | 000DFDD6 | 000200519c37 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000E8B | 00001D16 | 000DFDDC | 00051408 | ld AL, #0x508 ; prefixes=1
+000E8D | 00001D1A | 000DFDE0 | 006110cc | ld AH, #0x60CC ; prefixes=1
+000E8F | 00001D1E | 000DFDE4 | 000200519c30 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+000E92 | 00001D24 | 000DFDEA | 25ff | st AL, @0xFFFF
+000E93 | 00001D26 | 000DFDEC | 1400 | ld AL, #0x0
+000E94 | 00001D28 | 000DFDEE | 2700 | st AL, @(0x0,Y)
+000E95 | 00001D2A | 000DFDF0 | 1400 | ld AL, #0x0
+000E96 | 00001D2C | 000DFDF2 | 2701 | st AL, @(0x1,Y)
+000E97 | 00001D2E | 000DFDF4 | 000114c8 | ld AL, #0xC8 ; prefixes=1
+000E99 | 00001D32 | 000DFDF8 | 2702 | st AL, @(0x2,Y)
+000E9A | 00001D34 | 000DFDFA | 15ff | ld AL, @0xFFFF
+000E9B | 00001D36 | 000DFDFC | 170f | ld AL, @(0xF,Y)
+000E9C | 00001D38 | 000DFDFE | 006110cc | ld AH, #0x60CC ; prefixes=1
+000E9E | 00001D3C | 000DFE02 | 00f29cbf | bsr word_0x00005E ; prefixes=1; target_input_byte=0xBC
+000EA0 | 00001D40 | 000DFE06 | 000ee0cd | bra word_0x001C6E ; prefixes=1; target_input_byte=0x38DC
+
+; 0x601F handler is not the assumed ADK auto-off
+001BE9 | 000037D2 | 000E1898 | 19f2 | ld X, @0xFFF2
+001BEA | 000037D4 | 000E189A | 1662 | ld AL, @(0x62,X)
+001BEB | 000037D6 | 000E189C | 00010080c4ff | and AL, #0x7FFF ; prefixes=2
+001BEE | 000037DC | 000E18A2 | 19f2 | ld X, @0xFFF2
+001BEF | 000037DE | 000E18A4 | 2662 | st AL, @(0x62,X)
+001BF0 | 000037E0 | 000E18A6 | e07e | bra word_0x001C6E ; target_input_byte=0x38DC
+
+; standby state flag
+00042F | 0000085E | 000DE924 | 0bfe | enterl #0x2
+000430 | 00000860 | 000DE926 | 00ff9c11 | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+000432 | 00000864 | 000DE92A | 19f2 | ld X, @0xFFF2
+000433 | 00000866 | 000DE92C | 1654 | ld AL, @(0x54,X)
+000434 | 00000868 | 000DE92E | 0ffe | leavel #0x2
+000435 | 0000086A | 000DE930 | 0bfe | enterl #0x2
+000436 | 0000086C | 000DE932 | 00ff9c0b | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+000438 | 00000870 | 000DE936 | 19f2 | ld X, @0xFFF2
+000439 | 00000872 | 000DE938 | 2654 | st AL, @(0x54,X)
+00043A | 00000874 | 000DE93A | 0ffe | leavel #0x2
+00043B | 00000876 | 000DE93C | 0bfe | enterl #0x2
+00043C | 00000878 | 000DE93E | 00ff9c05 | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+00043E | 0000087C | 000DE942 | 19f2 | ld X, @0xFFF2
+00043F | 0000087E | 000DE944 | 1257 | ld AH, @(0x57,X)
+000440 | 00000880 | 000DE946 | 0900a40f | lsr #0xF ; unsigned_modifier
+000442 | 00000884 | 000DE94A | 15e0 | ld AL, @0xFFE0
+000443 | 00000886 | 000DE94C | 0ffe | leavel #0x2
+
+; hardware-control wrappers
+003360 | 000066C0 | 000E4786 | 0bfe | enterl #0x2
+003361 | 000066C2 | 000E4788 | 00d09ce0 | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+003363 | 000066C6 | 000E478C | 1401 | ld AL, #0x1
+003364 | 000066C8 | 000E478E | 9c08 | bsr word_0x00336C ; target_input_byte=0x66D8
+003365 | 000066CA | 000E4790 | 0ffe | leavel #0x2
+003366 | 000066CC | 000E4792 | 0bfe | enterl #0x2
+003367 | 000066CE | 000E4794 | 00d09cda | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+003369 | 000066D2 | 000E4798 | 1400 | ld AL, #0x0
+00336A | 000066D4 | 000E479A | 9c02 | bsr word_0x00336C ; target_input_byte=0x66D8
+00336B | 000066D6 | 000E479C | 0ffe | leavel #0x2
+00336C | 000066D8 | 000E479E | 0bfd | enterl #0x3
+00336D | 000066DA | 000E47A0 | 00d09cd4 | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+00336F | 000066DE | 000E47A4 | 2700 | st AL, @(0x0,Y)
+003370 | 000066E0 | 000E47A6 | 1403 | ld AL, #0x3
+003371 | 000066E2 | 000E47A8 | 1001 | ld AH, #0x1
+003372 | 000066E4 | 000E47AA | 00519c3c | bsr word_0x0084AF ; prefixes=1; target_input_byte=0x1095E
+003374 | 000066E8 | 000E47AE | 0ffd | leavel #0x3
+003375 | 000066EA | 000E47B0 | 0bfd | enterl #0x3
+003376 | 000066EC | 000E47B2 | 00d09ccb | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+003378 | 000066F0 | 000E47B6 | 2700 | st AL, @(0x0,Y)
+003379 | 000066F2 | 000E47B8 | 1404 | ld AL, #0x4
+00337A | 000066F4 | 000E47BA | 1001 | ld AH, #0x1
+00337B | 000066F6 | 000E47BC | 00519c33 | bsr word_0x0084AF ; prefixes=1; target_input_byte=0x1095E
+00337D | 000066FA | 000E47C0 | 0ffd | leavel #0x3
+00337E | 000066FC | 000E47C2 | 0bfd | enterl #0x3
+00337F | 000066FE | 000E47C4 | 00d09cc2 | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+003381 | 00006702 | 000E47C8 | 2700 | st AL, @(0x0,Y)
+003382 | 00006704 | 000E47CA | 140e | ld AL, #0xE
+003383 | 00006706 | 000E47CC | 1001 | ld AH, #0x1
+003384 | 00006708 | 000E47CE | 00519c2a | bsr word_0x0084AF ; prefixes=1; target_input_byte=0x1095E
+003386 | 0000670C | 000E47D2 | 0ffd | leavel #0x3
+
+; configuration read and fallback
+0068B1 | 0000D162 | 000EB228 | 0bf9 | enterl #0x7
+0068B2 | 0000D164 | 000EB22A | 009b9c8f | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+0068B4 | 0000D168 | 000EB22E | 2701 | st AL, @(0x1,Y)
+0068B5 | 0000D16A | 000EB230 | 2302 | st AH, @(0x2,Y)
+0068B6 | 0000D16C | 000EB232 | 1708 | ld AL, @(0x8,Y)
+0068B7 | 0000D16E | 000EB234 | 2700 | st AL, @(0x0,Y)
+0068B8 | 0000D170 | 000EB236 | 15e0 | ld AL, @0xFFE0
+0068B9 | 0000D172 | 000EB238 | 1307 | ld AH, @(0x7,Y)
+0068BA | 0000D174 | 000EB23A | 00989cb7 | bsr word_0x000072 ; prefixes=1; target_input_byte=0xE4
+0068BC | 0000D178 | 000EB23E | 2703 | st AL, @(0x3,Y)
+0068BD | 0000D17A | 000EB240 | 8400 | cmp AL, #0x0
+0068BE | 0000D17C | 000EB242 | f035 | bne word_0x0068F3 ; target_input_byte=0xD1E6
+0068BF | 0000D17E | 000EB244 | 1701 | ld AL, @(0x1,Y)
+0068C0 | 0000D180 | 000EB246 | 007f34bd | add AL, #0x7EBD ; prefixes=1
+0068C2 | 0000D184 | 000EB24A | 25fc | st AL, @0xFFFC
+0068C3 | 0000D186 | 000EB24C | 00999c4c | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+0068C5 | 0000D18A | 000EB250 | 8400 | cmp AL, #0x0
+0068C6 | 0000D18C | 000EB252 | f432 | beq word_0x0068F8 ; target_input_byte=0xD1F0
+0068C7 | 0000D18E | 000EB254 | 3702 | add AL, @(0x2,Y)
+0068C8 | 0000D190 | 000EB256 | 25fc | st AL, @0xFFFC
+0068C9 | 0000D192 | 000EB258 | 00999c46 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+0068CB | 0000D196 | 000EB25C | 2704 | st AL, @(0x4,Y)
+0068CC | 0000D198 | 000EB25E | 25fc | st AL, @0xFFFC
+0068CD | 0000D19A | 000EB260 | 00999c42 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+0068CF | 0000D19E | 000EB264 | 8400 | cmp AL, #0x0
+0068D0 | 0000D1A0 | 000EB266 | f428 | beq word_0x0068F8 ; target_input_byte=0xD1F0
+0068D1 | 0000D1A2 | 000EB268 | 8708 | cmp AL, @(0x8,Y)
+0068D2 | 0000D1A4 | 000EB26A | f00a | bne word_0x0068DC ; target_input_byte=0xD1B8
+0068D3 | 0000D1A6 | 000EB26C | 1001 | ld AH, #0x1
+0068D4 | 0000D1A8 | 000EB26E | 31fc | add AH, @0xFFFC
+0068D5 | 0000D1AA | 000EB270 | 1708 | ld AL, @(0x8,Y)
+0068D6 | 0000D1AC | 000EB272 | 2700 | st AL, @(0x0,Y)
+0068D7 | 0000D1AE | 000EB274 | 1707 | ld AL, @(0x7,Y)
+0068D8 | 0000D1B0 | 000EB276 | 00979c59 | bsr word_0x000032 ; prefixes=1; target_input_byte=0x64
+0068DA | 0000D1B4 | 000EB27A | 1708 | ld AL, @(0x8,Y)
+0068DB | 0000D1B6 | 000EB27C | e016 | bra word_0x0068F1 ; target_input_byte=0xD1E2
+0068DC | 0000D1B8 | 000EB27E | 1b04 | ld X, @(0x4,Y)
+0068DD | 0000D1BA | 000EB280 | 29fc | st X, @0xFFFC
+0068DE | 0000D1BC | 000EB282 | 00999c31 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+0068E0 | 0000D1C0 | 000EB286 | 8708 | cmp AL, @(0x8,Y)
+0068E1 | 0000D1C2 | 000EB288 | f402 | beq word_0x0068E3 ; target_input_byte=0xD1C6
+0068E2 | 0000D1C4 | 000EB28A | f814 | bcc word_0x0068F6 ; target_input_byte=0xD1EC
+0068E3 | 0000D1C6 | 000EB28C | 1304 | ld AH, @(0x4,Y)
+0068E4 | 0000D1C8 | 000EB28E | 3001 | add AH, #0x1
+0068E5 | 0000D1CA | 000EB290 | 1b04 | ld X, @(0x4,Y)
+0068E6 | 0000D1CC | 000EB292 | 29fc | st X, @0xFFFC
+0068E7 | 0000D1CE | 000EB294 | 00999c28 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+0068E9 | 0000D1D2 | 000EB298 | 2700 | st AL, @(0x0,Y)
+0068EA | 0000D1D4 | 000EB29A | 1707 | ld AL, @(0x7,Y)
+0068EB | 0000D1D6 | 000EB29C | 00979c46 | bsr word_0x000032 ; prefixes=1; target_input_byte=0x64
+0068ED | 0000D1DA | 000EB2A0 | 1b04 | ld X, @(0x4,Y)
+0068EE | 0000D1DC | 000EB2A2 | 29fc | st X, @0xFFFC
+0068EF | 0000D1DE | 000EB2A4 | 00999c20 | bsr word_0x000210 ; prefixes=1; target_input_byte=0x420
+0068F1 | 0000D1E2 | 000EB2A8 | 2703 | st AL, @(0x3,Y)
+0068F2 | 0000D1E4 | 000EB2AA | e006 | bra word_0x0068F8 ; target_input_byte=0xD1F0
+0068F3 | 0000D1E6 | 000EB2AC | 1703 | ld AL, @(0x3,Y)
+0068F4 | 0000D1E8 | 000EB2AE | 8708 | cmp AL, @(0x8,Y)
+0068F5 | 0000D1EA | 000EB2B0 | f403 | beq word_0x0068F8 ; target_input_byte=0xD1F0
+0068F6 | 0000D1EC | 000EB2B2 | 00979c43 | bsr word_0x00003A ; prefixes=1; target_input_byte=0x74
+0068F8 | 0000D1F0 | 000EB2B6 | 1703 | ld AL, @(0x3,Y)
+0068F9 | 0000D1F2 | 000EB2B8 | 0ff9 | leavel #0x7
+
+; timer configuration load
+006954 | 0000D2A8 | 000EB36E | 0bfc | enterl #0x4
+006955 | 0000D2AA | 000EB370 | 009a9cec | bsr word_0x000342 ; prefixes=1; target_input_byte=0x684
+006957 | 0000D2AE | 000EB374 | 19f2 | ld X, @0xFFF2
+006958 | 0000D2B0 | 000EB376 | 1619 | ld AL, @(0x19,X)
+006959 | 0000D2B2 | 000EB378 | 3447 | add AL, #0x47
+00695A | 0000D2B4 | 000EB37A | 2700 | st AL, @(0x0,Y)
+00695B | 0000D2B6 | 000EB37C | 25ff | st AL, @0xFFFF
+00695C | 0000D2B8 | 000EB37E | 1415 | ld AL, #0x15
+00695D | 0000D2BA | 000EB380 | 2701 | st AL, @(0x1,Y)
+00695E | 0000D2BC | 000EB382 | 15ff | ld AL, @0xFFFF
+00695F | 0000D2BE | 000EB384 | 19f2 | ld X, @0xFFF2
+006960 | 0000D2C0 | 000EB386 | 163e | ld AL, @(0x3E,X)
+006961 | 0000D2C2 | 000EB388 | 1006 | ld AH, #0x6
+006962 | 0000D2C4 | 000EB38A | 00ff9c4e | bsr word_0x0068B1 ; prefixes=1; target_input_byte=0xD162
+
+; state-dependent idle scheduling
+0091D4 | 000123A8 | 000F046E | 0bfa | enterl #0x6
+0091D5 | 000123AA | 000F0470 | 00ff00719c6b | bsr word_0x000342 ; prefixes=2; target_input_byte=0x684
+0091D8 | 000123B0 | 000F0476 | 2703 | st AL, @(0x3,Y)
+0091D9 | 000123B2 | 000F0478 | 840d | cmp AL, #0xD
+0091DA | 000123B4 | 000F047A | f405 | beq word_0x0091DF ; target_input_byte=0x123BE
+0091DB | 000123B6 | 000F047C | 8404 | cmp AL, #0x4
+0091DC | 000123B8 | 000F047E | f403 | beq word_0x0091DF ; target_input_byte=0x123BE
+0091DD | 000123BA | 000F0480 | 8405 | cmp AL, #0x5
+0091DE | 000123BC | 000F0482 | f01e | bne word_0x0091FC ; target_input_byte=0x123F8
+0091DF | 000123BE | 000F0484 | 00051408 | ld AL, #0x508 ; prefixes=1
+0091E1 | 000123C2 | 000F0488 | 006110d8 | ld AH, #0x60D8 ; prefixes=1
+0091E3 | 000123C6 | 000F048C | 000200ce9cdc | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+0091E6 | 000123CC | 000F0492 | 00ff00729c47 | bsr word_0x00042F ; prefixes=2; target_input_byte=0x85E
+0091E9 | 000123D2 | 000F0498 | 8401 | cmp AL, #0x1
+0091EA | 000123D4 | 000F049A | f034 | bne word_0x00921E ; target_input_byte=0x1243C
+0091EB | 000123D6 | 000F049C | 00051408 | ld AL, #0x508 ; prefixes=1
+0091ED | 000123DA | 000F04A0 | 006110e1 | ld AH, #0x60E1 ; prefixes=1
+0091EF | 000123DE | 000F04A4 | 000200ce9cd0 | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+0091F2 | 000123E4 | 000F04AA | 1400 | ld AL, #0x0
+0091F3 | 000123E6 | 000F04AC | 2700 | st AL, @(0x0,Y)
+0091F4 | 000123E8 | 000F04AE | 00051408 | ld AL, #0x508 ; prefixes=1
+0091F6 | 000123EC | 000F04B2 | 006110e1 | ld AH, #0x60E1 ; prefixes=1
+0091F8 | 000123F0 | 000F04B6 | 000200ce9cb8 | bsr word_0x025FB2 ; prefixes=2; target_input_byte=0x4BF64
+0091FB | 000123F6 | 000F04BC | e023 | bra word_0x00921E ; target_input_byte=0x1243C
+0091FC | 000123F8 | 000F04BE | 9c51 | bsr word_0x00924D ; target_input_byte=0x1249A
+0091FD | 000123FA | 000F04C0 | 34fc | add AL, #0xFFFC
+0091FE | 000123FC | 000F04C2 | 840a | cmp AL, #0xA
+0091FF | 000123FE | 000F04C4 | f81f | bcc word_0x00921E ; target_input_byte=0x1243C
+009200 | 00012400 | 000F04C6 | 00051408 | ld AL, #0x508 ; prefixes=1
+009202 | 00012404 | 000F04CA | 006110d8 | ld AH, #0x60D8 ; prefixes=1
+009204 | 00012408 | 000F04CE | 000200ce9cbb | bsr word_0x025FC1 ; prefixes=2; target_input_byte=0x4BF82
+009207 | 0001240E | 000F04D4 | 25ff | st AL, @0xFFFF
+009208 | 00012410 | 000F04D6 | 1400 | ld AL, #0x0
+009209 | 00012412 | 000F04D8 | 2700 | st AL, @(0x0,Y)
+00920A | 00012414 | 000F04DA | 15ff | ld AL, @0xFFFF
+00920B | 00012416 | 000F04DC | 19f2 | ld X, @0xFFF2
+00920C | 00012418 | 000F04DE | 1619 | ld AL, @(0x19,X)
+00920D | 0001241A | 000F04E0 | 345a | add AL, #0x5A
+00920E | 0001241C | 000F04E2 | 25fc | st AL, @0xFFFC
+00920F | 0001241E | 000F04E4 | 00ff00709cff | bsr word_0x000210 ; prefixes=2; target_input_byte=0x420
+009212 | 00012424 | 000F04EA | 0900000490e8 | umult #0x3E8 ; prefixes=1; unsigned_modifier
+009215 | 0001242A | 000F04F0 | 2301 | st AH, @(0x1,Y)
+009216 | 0001242C | 000F04F2 | 2702 | st AL, @(0x2,Y)
+009217 | 0001242E | 000F04F4 | 00051408 | ld AL, #0x508 ; prefixes=1
+009219 | 00012432 | 000F04F8 | 006110d8 | ld AH, #0x60D8 ; prefixes=1
+00921B | 00012436 | 000F04FC | 00ff006e9c41 | bsr word_0x00005E ; prefixes=2; target_input_byte=0xBC
+
+; immediate-send and cancel-all wrappers
+025FB2 | 0004BF64 | 0012A02A | 0bfb | enterl #0x5
+025FB3 | 0004BF66 | 0012A02C | 00fe00a49c8d | bsr word_0x000342 ; prefixes=2; target_input_byte=0x684
+025FB6 | 0004BF6C | 0012A032 | 1b05 | ld X, @(0x5,Y)
+025FB7 | 0004BF6E | 0012A034 | 2b00 | st X, @(0x0,Y)
+025FB8 | 0004BF70 | 0012A036 | 25ff | st AL, @0xFFFF
+025FB9 | 0004BF72 | 0012A038 | 14ff | ld AL, #0xFFFF
+025FBA | 0004BF74 | 0012A03A | 2701 | st AL, @(0x1,Y)
+025FBB | 0004BF76 | 0012A03C | 2702 | st AL, @(0x2,Y)
+025FBC | 0004BF78 | 0012A03E | 15ff | ld AL, @0xFFFF
+025FBD | 0004BF7A | 0012A040 | 00fe00a19c9f | bsr word_0x00005E ; prefixes=2; target_input_byte=0xBC
+025FC0 | 0004BF80 | 0012A046 | 0ffb | leavel #0x5
+025FC1 | 0004BF82 | 0012A048 | 0bfb | enterl #0x5
+025FC2 | 0004BF84 | 0012A04A | 00fe00a39c7e | bsr word_0x000342 ; prefixes=2; target_input_byte=0x684
+025FC5 | 0004BF8A | 0012A050 | 2700 | st AL, @(0x0,Y)
+025FC6 | 0004BF8C | 0012A052 | 2301 | st AH, @(0x1,Y)
+025FC7 | 0004BF8E | 0012A054 | 1400 | ld AL, #0x0
+025FC8 | 0004BF90 | 0012A056 | e003 | bra word_0x025FCB ; target_input_byte=0x4BF96
+025FC9 | 0004BF92 | 0012A058 | 1702 | ld AL, @(0x2,Y)
+025FCA | 0004BF94 | 0012A05A | 3401 | add AL, #0x1
+025FCB | 0004BF96 | 0012A05C | 2702 | st AL, @(0x2,Y)
+025FCC | 0004BF98 | 0012A05E | 1700 | ld AL, @(0x0,Y)
+025FCD | 0004BF9A | 0012A060 | 1301 | ld AH, @(0x1,Y)
+025FCE | 0004BF9C | 0012A062 | 00fe00a19c92 | bsr word_0x000062 ; prefixes=2; target_input_byte=0xC4
+025FD1 | 0004BFA2 | 0012A068 | 8400 | cmp AL, #0x0
+025FD2 | 0004BFA4 | 0012A06A | f0f7 | bne word_0x025FC9 ; target_input_byte=0x4BF92
+025FD3 | 0004BFA6 | 0012A06C | 1702 | ld AL, @(0x2,Y)
+025FD4 | 0004BFA8 | 0012A06E | 0ffb | leavel #0x5

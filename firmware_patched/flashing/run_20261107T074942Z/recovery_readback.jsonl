@@ -1,0 +1,2 @@
+{"time_utc": "2026-11-07T07:52:47.232253+00:00", "event": "state", "raw": "0302"}
+{"time_utc": "2026-11-07T07:52:47.235129+00:00", "event": "status", "raw": "0200b43d000200", "status": 0, "poll_timeout_ms": 15796, "state": 2, "string_index": 0}

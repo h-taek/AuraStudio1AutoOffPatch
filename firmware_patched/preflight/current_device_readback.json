@@ -1,0 +1,29 @@
+{
+  "time_utc": "2026-11-07T07:31:33.874735+00:00",
+  "vid": "0x0ECB",
+  "pid": "0x1EB2",
+  "operations": "GET Feature only; no SET, reset, abort or download",
+  "initial_state_raw": "0302",
+  "initial_status_raw": "0200b43d000200",
+  "initial_status": {
+    "status": 0,
+    "poll_timeout_ms": 15796,
+    "state": 2,
+    "string_index": 0
+  },
+  "result": "passed",
+  "bytes": 1316910,
+  "blocks": 1295,
+  "full_blocks": 1294,
+  "last_block_bytes": 912,
+  "sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "matches_original": true,
+  "final_status_raw": "0200b43d000200",
+  "final_status": {
+    "status": 0,
+    "poll_timeout_ms": 15796,
+    "state": 2,
+    "string_index": 0
+  },
+  "seconds": 16.75
+}

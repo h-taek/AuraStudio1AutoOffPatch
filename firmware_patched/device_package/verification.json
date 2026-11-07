@@ -1,0 +1,58 @@
+{
+  "baseline_sha256": "713526fe210a2276055f78f66a5c188069f19e92b1c13fa442d13d0c9c5f975c",
+  "current_ps_preserved_byte_for_byte": true,
+  "code_change_bytes": 1,
+  "all_changed_offsets": [
+    639082,
+    639083,
+    639084,
+    639085,
+    909500,
+    916710
+  ],
+  "changed_bytes_including_checksums": 6,
+  "images": [
+    {
+      "name": "aura_studio1_current_original_restore",
+      "payload_sha256": "713526fe210a2276055f78f66a5c188069f19e92b1c13fa442d13d0c9c5f975c",
+      "package_sha256": "f1ec4bc12ac1b68df469063143654ea6eb688673b032069587000c7df4cbc415",
+      "packet_plan": {
+        "mode": "offline_only_no_hardware_send",
+        "feature_report_bytes": 1023,
+        "payload_per_full_report": 1017,
+        "data_reports": 1295,
+        "final_empty_reports": 1,
+        "last_data_bytes": 912,
+        "first_report_preview": "01010000f9034353522d6466753203002e181400c804",
+        "last_data_header": "01010e059003",
+        "final_empty_header": "01010f050000",
+        "reassembled_exactly": true,
+        "payload_sha256": "713526fe210a2276055f78f66a5c188069f19e92b1c13fa442d13d0c9c5f975c",
+        "device_state_timing_and_acceptance_tested": false
+      }
+    },
+    {
+      "name": "aura_studio1_auto_off_disabled",
+      "payload_sha256": "54ff5707b07e0388689f023180fa483fcbabec82d5286996c6c314d27b0aad38",
+      "package_sha256": "29133e78115bd0ae279b9d67e974e3c221a6ec81bcafed4cec8e73942d5df934",
+      "packet_plan": {
+        "mode": "offline_only_no_hardware_send",
+        "feature_report_bytes": 1023,
+        "payload_per_full_report": 1017,
+        "data_reports": 1295,
+        "final_empty_reports": 1,
+        "last_data_bytes": 912,
+        "first_report_preview": "01010000f9034353522d6466753203002e181400c804",
+        "last_data_header": "01010e059003",
+        "final_empty_header": "01010f050000",
+        "reassembled_exactly": true,
+        "payload_sha256": "54ff5707b07e0388689f023180fa483fcbabec82d5286996c6c314d27b0aad38",
+        "device_state_timing_and_acceptance_tested": false
+      }
+    }
+  ],
+  "hardware_write": "written_readback_verified_reset_sent",
+  "run_directory": "firmware_patched/flashing/run_20261107T081225Z",
+  "post_write_exact_match": true,
+  "hardware_playback_tested": false
+}

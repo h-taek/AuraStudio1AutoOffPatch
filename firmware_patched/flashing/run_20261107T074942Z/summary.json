@@ -1,0 +1,8 @@
+{
+  "result": "failed_or_unconfirmed",
+  "output": "firmware_patched/flashing/run_20261107T074942Z",
+  "error": "DFU error status=7 state=10; stopped",
+  "write_attempted": true,
+  "automatic_retry": false,
+  "status_query_error": "DFU error status=7 state=10; stopped"
+}

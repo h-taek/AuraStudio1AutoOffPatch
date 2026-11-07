@@ -1,0 +1,12 @@
+{
+  "source_sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "source_unchanged": true,
+  "repeat_identical": true,
+  "source_bytes": 1316910,
+  "artifact_slices_verified": 25,
+  "source_reconstruction_exact": true,
+  "ps_records_independently_verified": 58,
+  "filesystem_files_independently_verified": 17,
+  "file_crc_verified": true,
+  "notes": "Does not import unpacker. Runtime behavior, timer semantics and restoreability unverified."
+}

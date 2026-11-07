@@ -1,0 +1,19 @@
+{
+  "model": "Harman Kardon Aura Studio 1 / APIHKAURAST",
+  "usb_vid": "0x0ECB",
+  "usb_pid": "0x1EB2",
+  "extracted_at": "2026-11-07 Asia/Seoul",
+  "bytes": 1316910,
+  "sha256": "d287d29d84c7e3ba032777805f8bc5a19c00f99807b72a8e225c9ce6cdca4925",
+  "two_reads_identical": true,
+  "header_magic": "CSR-dfu2",
+  "header_declared_length_matches": true,
+  "crc32_complement_verified": true,
+  "device_writes_sent": false,
+  "files": [
+    "aura_studio1_original.bin",
+    "aura_studio1_repeat.bin"
+  ],
+  "scope": "Unmodified USB HID DFU upload; full physical flash/MCU/bootloader coverage and restoreability unverified",
+  "relocation": "Logs retain paths at extraction time under docs/research; all captures moved to firmware/captures/read1 and read2"
+}
